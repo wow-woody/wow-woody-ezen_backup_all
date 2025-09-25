@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num=2;
+        // 1. 일반 함수 : 선언적 함수 매개값이 1개
+        function 일반함수(uName){
+            document.write(`${uName} 안녕<br>`)  //${내용} 문자를 변수 매개값으로 인식
+        }
+   
+        // 2. 변수형 : 익명적 함수 - 변수이름(변수매개값-보낼값)
+        let 익명함수 = function(uName){
+            document.write(`${uName} 안녕<br>`);
+        }
+
+
+
+        // 3. 화살표 함수 1개, 2개 짜리
+        // 메게값이 하나면 함수의 ()를 생략할 수 있다
+        // 싱핼항 문장이 하나면 {같은 줄에 쓴다}
+
+        // let 화살표함수 =(a) => {
+        //     document.write(`${a}안녕<br>`)
+        // }
+
+        // let 화살표함수 =a => {
+        //     document.write(`${a}안녕<br>`)
+        // }
+
+        let 화살표함수 = a => document.write(`${a}안녕<br>`)
+
+        let 화살표함수2 = (para, num) => document.write(`${para}가 ${num}.이상할 때는 괄호 생략 불가`)
+        
+
+        일반함수("선언적 함수");
+        익명함수 ("익명함수");
+        화살표함수 ("화살표");
+        화살표함수2 ("매개값이", num);
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

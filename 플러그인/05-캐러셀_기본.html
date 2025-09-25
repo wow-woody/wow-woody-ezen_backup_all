@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/05-캐러셀_기본.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+
+    <script>
+        window.onload = function () {
+            let swiper = new Swiper(".goods-wrap", {
+                loop: true,
+                autoplay: {
+                    delay: 3000
+                },
+                slidesPerView: 1, // 배너의 보고 싶은 개수
+                spaceBetween: 30, //사이 간격 
+                pagination: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    // clickable: true,
+                },
+                breakpoints: {
+                    // 480px ~ 767px
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+
+                    // 768px~1024px
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+
+                    //1024px~
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
+
+
+                }
+            })
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="goods-wrap swiper">
+        <ul class="swiper-wrapper goods-list">
+            <li class="swiper-slide">
+                <a href="#">
+                    <div class="text-box">Slider 1</div>
+                    <img-box><img src="./images/main_banner-01.png" alt="1"></img-box>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <div class="text-box">Slider 2</div>
+                    <img-box><img src="./images/main_banner-02.png" alt="2"></img-box>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <div class="text-box">Slider 3</div>
+                    <img-box><img src="./images/main_banner-03.png" alt="3"></img-box>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <div class="text-box">Slider 4</div>
+                    <img-box><img src="./images/main_banner-04.png" alt="4"></img-box>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <div class="text-box">Slider 5</div>
+                    <img-box><img src="./images/main_banner-05.png" alt="5"></img-box>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <div class="text-box">Slider 6</div>
+                    <img-box><img src="./images/main_banner-06.png" alt="6"></img-box>
+                </a>
+            </li>
+        </ul>
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</body>
+
+</html>

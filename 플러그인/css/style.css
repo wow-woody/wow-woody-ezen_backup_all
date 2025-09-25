@@ -1,0 +1,37 @@
+
+
+.main-slider-wrap {
+    height: 600px;
+    color:#fff;
+    font-size:100px;
+}
+
+.main-slider-wrap a {
+    color: #fff;
+    font-size:100px;
+    text-decoration: none;
+}
+
+
+
+/* swipr */
+/* pager - 숫자 */
+.swiper-pagination-fraction{
+    color: #fff;
+}
+
+/* pager-dot */
+.swiper-pagination-buller {
+    color: #eee;
+}
+.swiper-pagination-active {
+    background: red;
+
+}
+
+/* arrow */
+.swiper-buttom-next,
+.swiper-buttom-prev{
+    color: #ddd;
+
+}

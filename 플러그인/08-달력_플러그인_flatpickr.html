@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        window.onload = function () {
+            flatpickr("#myDate", {
+                minDate: "today",   // 시작날짜 명령어
+                // maxDate: "2025-10-24",  // 최대 선택 날자 명령어
+                maxDate: new Date().fp.incr(7),   // 오늘 날짜로부터 7일간만 선택 명령어
+            });
+
+            // 항상 달력이 출력되도록
+            flatpickr(".calendar", {
+                inline: true,
+
+            })
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <img src="./images/slider-left-btn.png" alt="">
+        <label for="myDate">YY/MM/DD</label>
+        <input type="text" id="myDate">
+    </div>
+    
+    <h1>달력</h1>
+    <div class="calendar"></div>
+</body>
+
+</html>
