@@ -1,0 +1,55 @@
+p {
+    font-size: 15px;
+}
+
+.cursor1 {
+    cursor: all-scroll;
+}
+
+.cursor2 {
+    cursor: cell;
+}
+
+.cursor3 {
+    cursor:col-resize
+}
+
+
+.cursor4 {
+    cursor:copy;
+}
+
+.cursor5 {
+    cursor:crosshair;
+}
+.cursor6 {
+    cursor:e-resize;
+}
+.cursor7 {
+    cursor:grab;
+}
+.cursor8 {
+    cursor:grabbing;
+}
+.cursor9 {
+    cursor:help;
+}
+.cursor10 {
+    cursor:move;
+}
+.cursor11 {
+    cursor:pointer;
+}
+.cursor12 {
+    cursor:progress;
+}
+
+.cursor13 {
+    cursor:wait;
+}
+.cursor14 {
+    cursor:zoom-in;
+}
+
+.cursor15 {
+    cursor:url(../../01_HTML/img/m.cur),auto;

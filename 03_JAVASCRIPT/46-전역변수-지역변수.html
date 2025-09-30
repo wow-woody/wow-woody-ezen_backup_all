@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //전역변수-전국구
+        let globalVar = "나는 전역변수야~ 다쓸 수 있어 어디든 갈 수 있어"
+
+        function sample(){
+            let localVar="나는 지역변수야~ sample 함수에서만 사용할 수 있어. 다른 곳에서는 사용 안됨";
+            document.write(globalVar + "<br>");
+            document.write(localVar + "<br>");
+        }
+        sample();
+        document.write(`밖 ${globalVar} <br>`);
+        document.write(`밖 ${localVar} <br>`);
+
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

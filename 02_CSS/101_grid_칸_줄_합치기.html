@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            background: skyblue;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+
+        }
+
+        .wrap>div {
+            border: 1px solid;
+            background: pink;
+            line-height: 100px;
+
+        }
+
+        /* 1번은 첫번째 줄 전체 합치기 */
+        .grid1 {
+            grid-column: 1/4;
+        }
+
+
+
+
+
+        /* 2번 두번째 줄과 3번재 줄 합치기 */
+        .grid2 {
+            grid-row: 2/4;
+        }
+
+        /* 3번 두번쨰 줄의 두번째 칸, 세번째 칸 */
+        .grid3 {
+            grid-column: 2/4;
+        }
+
+        /* 6번 마지막 줄 전체 합치기 */
+        .grid6 {
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>grid</h2>
+    <p>칸 줄 합치기</p>
+
+    div.wrap>div.grid${$}*6
+
+    <div class="wrap">
+        <div class="grid1">1</div>
+        <div class="grid2">2</div>
+        <div class="grid3">3</div>
+        <div class="grid4">4</div>
+        <div class="grid5">5</div>
+        <div class="grid6">6</div>
+    </div>
+
+
+
+</body>
+
+</html>

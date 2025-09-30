@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 1. 사람 객체 생성
+        const person = {     //{} 중괄호는 객체를 만들 때 사용
+            name: "홍길동",
+            age: 30,
+            hobbies: ["운동", "독서", "코딩공부"]   //[] 중괄호는 배열을 넣을 때, 나열할 때 사용
+        }
+        document.write(person.hobbies[0] + "<br>");  // 운동을 출력함  ***중요: 배열 순서는 0부터 시작
+    
+        // .2 생성된 객체 안에 객체 데이터를 추가해서 출력하기
+        const weathers = {
+            kind: "rain",
+            items: ["구름", "무지개"],
+        }
+        weathers.items.push("막걸리");
+        document.write(weathers.items + "<br>");
+
+        // 3. items 배열 안에 내용을 items:무지개, items:막걸리로 각각 출력하기
+        weathers.items.forEach( items => {
+            document.write(`items:${items} <br>`);
+        });
+
+        // 4. 객체 안의 배열 안에 객체 추가넣기
+        const btsTeam = {
+            name:"bts",
+            albums:[
+                {title:"1집", subject:"Danger", content: "직설적인 랩과 파워풀한 후렴"},
+                {title:"2집", subject:"wings", content: "피 땀 눈물"},
+            ]
+        };
+        document.write(btsTeam.albums[1].title + "<br>");  // albums 베열 안에  두번째[1] title 출력
+        document.write(btsTeam.albums[0].subject + "<br>"); // albums 베열 안에  첫번째[0] subject 출력
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

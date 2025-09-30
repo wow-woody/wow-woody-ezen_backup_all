@@ -1,0 +1,26 @@
+:root {
+    /* 메인컬러 */
+    --main_color: #f13737;
+    /* 메인글자색 */
+    /* 설명글자색 */
+    --sub_text_color: #6f6f6f;
+
+    /* 제목글자크기 */
+    --title_size: 6.4rem;
+
+    /* 중간제목 */
+    --list_title:2.4rem;
+
+    /* 기본글자크기 */
+    --text_size: 1.6rem;
+
+    /* 모서리 둥글기 */
+    --large_radius: 10rem;
+    --middle_radius: 4rem;
+}
+
+.inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color:rgba(0,0,255,0.2);
+}

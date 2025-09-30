@@ -1,0 +1,33 @@
+.accord-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.accord-wrap .accord-list {
+    display: flex;
+    gap: 10px;justify-content: space-between;
+}
+
+.accord-list > div {
+    width: 30%;
+    height: 500px;
+    border: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    border-radius: 28px;
+    transition: 0.5s;
+
+}
+
+.accord-list > .active {
+    width: 65%;
+}
+
+.accord-list > div img  {
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .text{
+        border: 1px solid red;
+        width: 300px;
+
+        /* 웹 표준 아님 - 벤드피릭스를 붙여줘야함 */
+        /* box 자식요소를 옆으로 붙일 때 사용한다 */
+        display: -webkit-box;
+        /* 자식요소에 붙이는 방향을 설정할 때 아래로 붙이기 */
+        -webkit-box-orient: vertical;
+
+        /* 줄 수 정하기 */
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+</style>
+</head>
+<body>
+    <h1>여러줄 말줄임</h1>
+    <p class="text">
+        따사로운 햇살 속에서
+종소리가 울려 퍼지네
+뺨을 매만지는 바람
+한숨만은 깊어져만 가고
+저 멀리서 핑 도는 눈물
+이름을 붙여준 내일
+포개어지는 미래 빛 라인
+천진난만한 이런 기분도
+신이 나서 날아갈 정도로 웃었던 날도
+사랑스럽고 소중하게 키울 수 있도록
+어렵고 힘들었던 시간을 넘어서
+아주 많은 처음을 주었잖아
+이어져 가서는 닿기를
+천진난만한 이런 기분도
+신이 나서 날아갈 정도로 웃었던 날도
+사랑스럽고 소중하게 키울 수 있도록
+어렵고 힘들었던 시간을 넘어서
+아주 많은 처음을 주었잖아
+이어져 가서는
+천진난만한 이런 기분도
+신이 나서 날아갈 정도로 웃었던 날도
+사랑스럽고 소중하게 키울 수 있도록
+어렵고 힘들었던 시간을 넘어서
+아주 많은 처음을 주었잖아
+이어져 가서는
+이어져 가서는 닿기를
+    </p>
+</body>
+</html>

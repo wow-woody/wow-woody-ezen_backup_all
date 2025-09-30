@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/03-accord.css">
+
+</head>
+<body>
+    <search class="accord-wrap">
+        <!-- div.accord-list>div.accord*3>img -->
+        
+        <div class="accord-list">
+            <div class="accord"><img src="img/001-01.jpg" alt=""></div>
+            <div class="accord active"><img src="img/002-01.jpg" alt=""></div>
+            <div class="accord"><img src="img/003-01.jpg" alt=""></div>
+        </div>
+    </search>
+    <script>
+        //accord 를 선택하여 변수에 저장
+        let accordList = document.querySelectorAll(".accord");
+        //accord 에 마우스가 올라가면 active 클래스를 적용하고
+        accordList.forEach (accord => {
+            accord.addEventListener("mouseenter", function() {
+                accordList.forEach((el) => el.classList.remove("active"))
+                this.classList.add("active");
+
+            })
+        })
+        // 나머지 accord 는 acrive 클래스가 사라지도록
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.wrap {
+    max-width: 700px;
+    border: 1px solid black;
+    display: flex;
+    justify-content:space-evenly;
+}
+.wrap > div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+}

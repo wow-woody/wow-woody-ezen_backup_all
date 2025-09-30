@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 칸 합치기</title>
+    <style>
+        table, th, td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+<body>
+    <h1>테이블 줄 칸 합치기</h1>
+    <p> </p>
+    <!-- table>(tr>th*3{텍스트 $})tr*6>td*3{내용 $} -->
+
+
+    <table>
+        <tr>
+            <th colspan="2">구분</th>
+            <!-- <th></th> -->
+            <th>교육내용</th>
+        </tr>
+        <tr>
+            <td rowspan="3">기본 내용</td>
+            <td>1차시</td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>2차시</td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>3차시</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3">심화내용</td>
+            <td>1차시</td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>2차시</td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>3차시</td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>

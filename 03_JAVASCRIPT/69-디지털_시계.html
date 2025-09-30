@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 오늘의 날짜 정보를 구할 함수
+        function myClock(){
+            let today = new Date ();
+            console.log(today);
+        }
+
+
+        // 시간 hours
+        let hours = today.getHours();
+        // 분 m
+        let m = today.getMinutes();
+        // 초 s
+        let s = today.getSeconds();
+
+        console.log(hours,m,s);
+        //
+        let digit = document.querySelector("myClock")
+
+        //didit에서 시간 붙이기
+        digit.append('$hours : ${m} : ${s}')
+    </script>
+
+</head>
+<body>
+    <div class="myClock"></div>
+    
+</body>
+</html>
+
+

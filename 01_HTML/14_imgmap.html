@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지맵</title>
+</head>
+<body>
+    <h2>imgmap</h2>
+    <p>하나의 그임에 여러개의 링크를 줄 때 사용한다.</p> 
+    <p>영역: 사각, 원형, 다각형</p>
+    <br>
+    <br>
+    <br>
+    <img src="./img/map_0.png" alt="서울시 이미지맵" usemap="#mymap">
+    <map name="mymap">
+        <!-- 사각형 -->
+        <!-- coords 값 입력 방법 -->
+        <!-- "x1, y1, x2, y2" (좌상단 x1, y1 / 우하단 x2, y2)-->
+        <area shape="rect" coords="3,138,167,276" href="http://www.naver.com" alt="네이버_연결" target="_blank">
+
+
+        <!-- 원형 -->
+        <!-- coords 값 입력 방법 -->
+        <!-- "x, y, r" (중심 x, y / 반지름 r)-->
+        <area shape="circle" coords="275,268,43" href="https://www.google.com" alt="구글 연결" target="_blank">
+
+        
+        <!-- 다각형 -->
+        <!-- coords 값 입력 방법 -->
+        <!-- "x1, y1, x2, y2, x3, y3, ..." (각 꼭짓점 좌표 나열) -->
+        <area shape="poly" coords="375,266,382,258,381,250,393,238,392,220,400,206,416,206,426,196,428,212,434,220,438,237,434,252,422,272,411,276,387,279" href="https://www.gwangjin.go.kr/" alt="광진구청_연결" target="_blank">
+
+    </map>
+</body>
+</html>

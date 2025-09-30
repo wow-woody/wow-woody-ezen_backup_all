@@ -1,0 +1,40 @@
+.wrap {
+    width: 600px;
+    border: 5px solid black;
+    
+}
+
+
+.wrap > div {
+    width: 10px;
+    height: 50px;
+    background: pink;
+    margin: 10px;
+    transition-duration: 6s;
+}
+
+.wrap:hover > div {
+    width: calc(100% - 20px);
+
+}
+
+.wrap > .box2 {
+    transition-timing-function: linear;
+    
+}
+
+.wrap > .box3{
+    transition-timing-function: ease-out;
+}
+
+.wrap > .box4{
+    transition-timing-function: ease-in-out;
+}
+
+.wrap > .box5{
+    transition-timing-function: steps(5);
+}
+
+.wrap > .box6{
+    transition-timing-function: cubic-bezier(.3,1.41,.63,-1);
+}

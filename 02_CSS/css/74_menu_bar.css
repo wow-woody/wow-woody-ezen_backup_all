@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+
+header {
+    line-height: 80px;
+    background: #eee;
+}
+
+.inner {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.main-menu {
+    display: flex;
+    gap: 100px;
+
+}
+
+.main-menu > li {
+    
+}
+
+
+.main-menu > li > a {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    background: antiquewhite;
+}
+.main-menu > li > a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: dodgerblue;
+    transition: 0.3s;
+}
+
+.main-menu > li > a:hover::after {
+    width: 100%;
+}
+
+
+
+

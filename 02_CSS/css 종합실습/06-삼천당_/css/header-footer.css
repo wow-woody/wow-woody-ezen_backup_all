@@ -1,0 +1,133 @@
+/* header */
+header{
+   
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width:242px;
+}
+
+.main-menu{
+    display:flex;
+    gap:8rem;
+}
+.main-menu>li{
+    position: relative;
+}
+.main-menu>li>a{
+    font-size:2rem;
+    display: block;
+    line-height: 70px;
+}
+.main-menu>li:hover>a{
+    color:var(--main-color);
+}
+.main-menu>li::after{
+    content:"";
+    display: block;
+    width: 0%;
+    height:2px;
+    background:var(--main-color);
+    position: absolute;
+    bottom:0px;
+    left:50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+.main-menu>li:hover::after{
+    width: 100%;
+}
+.depth1{
+    display: none;
+    position: absolute;
+    font-size:var(--text-size);
+    background-color:pink;
+    line-height: 1.7;
+    top:68px;
+}
+
+.gnb-wrap{
+    display: flex;
+    gap:3rem;
+}
+.gnb-wrap .lang{
+    position: relative;
+}
+.gnb-wrap .lang>a{
+    font-size:var(--text-size);
+    background:url(../images/icon-down.svg) no-repeat 100% center;
+    padding-right:30px;
+    display: flex;
+    align-items: center;
+}
+.gnb-wrap .lang>a.active{
+    background-image: url(../images/icon-up.svg);
+}
+.gnb-wrap .lang a .lang-change{}
+.gnb-wrap .lang-list{
+    display: none;
+    position: absolute;
+    background:#fff;
+    padding:12px;
+    width:80px;
+    border-radius: 10px;
+    font-size:1.4rem;
+    line-height: 2;
+    text-align: center;
+    top:48px;
+    left:0;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+}
+.gnb-wrap .gnb-list{
+    display: flex;
+    gap:1rem;
+}
+
+/* footer */
+
+footer{
+
+}
+footer .inner{
+    max-width:1700px;
+    background:#636363;
+    border-radius: var(--large-radius) var(--large-radius) 0 0;
+    padding:50px 110px;
+    display: flex;
+    justify-content: space-between;
+    font-size:var(--text-size);
+    color:#f3f3f3;
+    font-weight: 200;
+}
+.footer-left{
+
+}
+.footer-left address{
+    margin: 3rem 0 2rem;
+}
+.footer-left .custom-center{
+    margin-top: 3rem;
+    font-weight: 500;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-right>ul{
+    display: flex;    
+    justify-content: flex-end;
+}
+.footer-right>.footer-menu{
+    gap:5rem;
+}
+.footer-right>.sns-list{}
+.footer-right>.sns-list img{
+    width: 44px;
+}
+

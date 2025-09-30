@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+
+}
+
+h1{
+    background: skyblue;
+    margin-bottom: 50px;
+}
+p {
+    background: pink;
+}
+
+div{
+    background: bisque;
+    border: 1px solid black;
+}
+
+/* 사방 50px */
+.box1{
+    margin: 50px;
+}
+
+/* 왼쪽 오른쪽 100, 위 아래 20px */
+.box2 {
+    margin: 100px 20px;}

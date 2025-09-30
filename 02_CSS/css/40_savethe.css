@@ -1,0 +1,40 @@
+/* 모든 요소  */
+/* 바깥 여백 값 0 */
+/* 안쪽여백 값 0 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+/* 너비 418, 높이 390, 테두리색#cbcccc, 안쪽여백 60 40 */
+.spon_list > div {
+    width: 418px;
+    height: 390px;
+    border: 1px solid #cbcccc;
+    border-radius: 12px;
+    padding: 60px 40px;
+
+}
+
+.spon_list > div .spon_subject {
+    color: #333;
+    font-size: 32px;
+    margin: 40px 0 20px;
+}
+
+.spon_list > div .spon_detail{
+    color: #555;
+    font-size: 20px;
+}
+
+.spon_list > div .spon_more{
+    margin-top: 10px;
+    text-align: right;
+}
+

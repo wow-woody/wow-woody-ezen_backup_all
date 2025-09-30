@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/04-1조-메인_슬라이드-기초.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = function () {
+            let video = document.querySelector("#mainVideo video");
+            const swiper = new Swiper(".main-slider-wrap", {
+                effect:"fade",
+                autoplay:{
+                    delay:3000
+                },
+                pagination: {
+                    el: ".swiper-pagination"
+                },
+                on:{
+                    init: function (){
+                       this.autoplay.stop();
+                    },
+
+                    slideChange:function (){
+                        let realIndex = this.realIndex;
+                        if(realIndex === 0) {
+                        this.autoplay.stop();
+                        video.currentTime = 0;
+                        video.play();
+                        } 
+                    }
+                }
+            });
+
+            // 처음 로딩할 때 auto play되는 swiper가 멈추도록해서 비디오 재성
+            swiper.autoplay.stop();
+            video.play();
+
+            // 비디오의 재생이 끝나면 다음 슬라이드로 넘어가기
+             video.addEventListener("ended",() => {
+                swiper.slideNext();
+                swiper.autoplay.start();
+             });
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-slider-wrap swiper">
+        <div class="swiper-wrapper">
+            <!-- div.swiper-slide*4>div.text-box+div.img-box>img -->
+            <div class="swiper-slide">
+                <div class="text-box">
+                    <strong>8월 에어로위크</strong>
+                    <p>8-10월 항공권 최대 97% 할인</p>
+                </div>
+                <div class="img-box" id="mainVideo">
+                    <video src="./video/slide-video-01.mp4"></video>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="text-box">
+                    <strong>청주-나트랑 신규 취항 기념</strong>
+                    <p>국제선 특가 41,400원~</p>
+                </div>
+                <div class="img-box">
+                    <img src="./images/slide-img-02.png" alt="2">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="text-box">
+                    <strong>9월 특별 운항</strong>
+                    <p>청주-마츠모토</p>
+                </div>
+                <div class="img-box">
+                    <img src="./images/slide-img-03.png" alt="3">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="text-box">
+                    <strong>매일 단독 운항 </strong>
+                    <p>청주-오키나와</p>
+                </div>
+                <div class="img-box">
+                    <img src="./images/slide-img-04.png" alt="4">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination slider-pager"></div>
+    </div>
+</body>
+
+</html>

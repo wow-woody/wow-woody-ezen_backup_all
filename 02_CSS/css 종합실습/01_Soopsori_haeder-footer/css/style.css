@@ -1,0 +1,235 @@
+/* 변수 선언 */
+/* 변수 입력 방법*/
+/*  --변수명:값  */
+/* 한글, 영어 대소문자, 숫자, - ,_ 사용가능 */
+
+:root {
+    --default:#092729;
+    --title-Size: 60px;
+    --title-family: "Jost", sans-serif;
+    
+}
+
+/* ham-btn 숨기기 */
+.ham-btn {
+    display: none;
+}
+
+/* font-family: "Jost", sans-serif; */
+body {}
+
+.inner {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 40px;
+    margin: 0 auto;
+    /* background: rgb(255, 237, 237); */
+}
+
+/* header */
+
+header {
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    /*position: fixed; 값을 주면 둥둥 떠다니면서 요소 사이즈로 맞춰짐 그래서 width: 100% 값을 반드시 줘야함  */
+    width: 100%;
+
+    /* position 우선순위 주는 코드 및 값 */
+    z-index: 10000;
+}
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 76px;
+}
+
+header .inner h1 {
+    display: flex;
+    align-items: center;
+
+
+}
+
+header .inner ul {
+    display: flex;
+}
+
+header .main-menu {
+    gap : 68px
+}
+
+header .main-menu > li {
+    align-self: center;
+}
+header .main-menu > li > a {
+    font-family:  var(--title-family);
+    font-size: 1.13rem;
+    font-weight: 500;
+    color: var(--default);
+}
+
+
+header .gnb{
+    gap:32px
+}
+
+
+/* main */
+.main-slider-wrap {}
+
+
+
+
+.main-slider-wrap .slider-list img {
+    width: 100%;
+} 
+
+section {
+    padding: 180px 0 0;
+}
+
+section .title {
+    font-family: var(--title-family);
+    font-size: var(--title-Size);
+    margin: 30px;
+}
+
+.magazine-wrap > .inner {
+    position: relative;
+}
+
+.magazine-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.magazine-list > li {
+    width: 25%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.magazine-list > li:first-child {
+    width: 330px;
+    height: 500px;
+
+}
+.magazine-list > li:nth-child(2) {
+      width: 245px;
+    height: 300px;
+
+}
+
+.magazine-list > li:last-child {
+    width: 330px;
+    height: 400px;
+}
+
+
+.magazine-list > li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.more-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* footer */
+
+
+footer {
+    background: var(--default);
+    color: #fff;
+}
+
+footer .inner {
+    padding: 94px 0;
+    max-width: 1680px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.footer-left {}
+
+.footer-left .util-address {}
+
+.footer-left .util-address {
+    margin: 40px 0;
+
+}
+
+
+
+.footer-left .util-address .util-menu {
+    display: flex;
+    gap: 10px;
+    font-size: 1.13rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer-left .util-address address{
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 20px;
+
+
+    
+    font-style: normal;
+}
+
+.footer-left .custom-center {
+    
+    
+}
+
+.footer-left .custom-center p {
+    font-size: 1.13rem;
+    margin: 3px 0;
+}
+
+.footer-left .custom-center p strong {
+    font-size: 1.5rem;
+    font-weight: 500px;
+}
+
+
+.footer-left .copy {
+    font-size: 0.88rem;
+    font-weight: 300;
+    margin-top: 24px;
+}
+
+
+.footer-left .text_op{
+    opacity: 0.7;
+}
+
+
+
+.footer-right {
+    text-align: end;
+}
+
+
+.footer-right .sns-list {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+
+.footer-right .footer-menu{
+    font-size: 1.13rem;
+    line-height: 1.5;
+}
+

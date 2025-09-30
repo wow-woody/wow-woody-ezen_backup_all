@@ -1,0 +1,47 @@
+.tab-wrap {
+    margin: 50px;
+}
+
+.tab-title{
+    display: flex;
+    gap:10px
+}
+
+.tab-title > li > a {
+    display: block;
+    padding: 8px 20px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.tab-title > .active > a {
+    background: #667eea;
+    color: fff;
+    transform: translateY(-2px);
+}
+
+.tab-content-wrap {
+    background: #f9f9f9;
+    padding: 40px;
+}
+
+.tab-content {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.tab-content .active {
+    display: block;
+    animation: fadeAni 0.5s;
+}
+
+@keyframes fadeAni {
+    0%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: :translateY(-20px);
+    }
+}

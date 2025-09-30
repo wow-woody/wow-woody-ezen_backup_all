@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+div {
+    background: skyblue;
+    border: 2px solid black;
+}
+
+
+/* .box1 안쪽 여백  */
+/* 위쪽 50px, 왼쪽 10px 오른쪽 100px */
+.box1 {
+   
+
+    /* padding-top: 50px; */
+    padding-block-start: 50px;
+
+    /* padding-left: 10px; */
+    padding-inline-start: 10px;
+
+    padding-right: 100px;
+}
+
+
+/* .box1 안쪽 여백 사방 50px  */
+.box2 {
+    padding: 50px;
+}
+
+
+.box3{
+    
+}
+
+/* .box4 위 50, 좌우 20, 아래 100 */
+.box4{
+    padding: 50px 20px 100px;
+}
+
+/* .box5 위 10 오른 30 아래 50 왼 70 */
+.box5{
+    padding: 10px 30px 50px 70px;
+}
+
+
+/* inline 요소에 위 아래 패딩은 문제 발생 */
+/* 위 애라 크기가 늘어나지 않음 다른 요소와 겹침 */
+
+
+span {
+    display: inline-block;
+    background: greenyellow;
+    padding: 50px 100px;
+}

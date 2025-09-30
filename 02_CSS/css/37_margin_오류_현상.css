@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+header {
+    background: skyblue;
+    height: 100px;
+}
+
+.inner {
+    max-width: 1200px;
+    background: pink;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 30px;
+    /* 첫번째 요소에 margin-top을 주면 조상이 떨어진다, 마진 오류 현상 */
+
+    /* 해결 방법 */
+    /* margin 대신  */
+    /* 1. pading을 준다. */
+    /* 2. float을 준다. */
+
+}

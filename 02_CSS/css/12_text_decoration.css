@@ -1,0 +1,24 @@
+/* 밑줄선 */
+.deco1 {
+    text-decoration: underline;
+}
+
+
+/* 중산선 / 취소선 */
+.deco2{
+
+    text-decoration: line-through;
+}
+
+글자 윗 부분 선
+.deco3{
+    text-decoration: overline;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-decoration-
+}

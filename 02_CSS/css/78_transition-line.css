@@ -1,0 +1,70 @@
+.img-box {
+    width: 400px;
+    margin: 100px;
+    position: relative;
+}
+
+
+.img-box::before, 
+.img-box::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.img-box > a::before,
+.img-box > a::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 0%;
+    background: blue;
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+.img-box > a::before {
+    /* height: 10%; */
+    bottom: 0;
+
+}
+.img-box > a::after{
+    /* height: 10%; */
+    right: 0;
+    top: 0;
+
+}
+
+
+.img-box > a::after{
+    content: "";
+
+}
+
+.img-box::before {
+
+}
+.img-box::after {
+    right: 0;
+}
+.img-box > a {}
+
+
+.img-box > a > img {
+    width: 100%;
+}
+
+
+.img-box:hover::before,
+.img-box:hover::after{
+    width: 100%;
+}
+.img-box > a:hover::before,
+.img-box > a:hover::after{
+    height: 100%;
+}

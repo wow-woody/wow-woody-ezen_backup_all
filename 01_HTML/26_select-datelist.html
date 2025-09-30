@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Datalist</title>
+</head>
+<body>
+    <h1>Select</h1>
+    <p>여러 요소 중 하나를 선택하는 드롭 다운 목록 만들기</p>
+    <P>
+        <lable>전화번호</lable>
+        <select>
+            <option value="02">02</option>
+            <option value="032">032</option>
+            <option value="054">054</option>
+            <option value="010">010</option>
+            <option value="011">011</option>
+        </select>
+        <select multiple>
+            <option value="02">02</option>
+            <option value="032">032</option>
+            <option value="054">054</option>
+            <option value="010">010</option>
+            <option value="011">011</option>
+        </select>
+    </P>
+    <br>
+    <br>
+    <p>optgroup: 옵션을 그룹으로 묶어서 관리할 때 사용</p>
+    <p>좋아하는 음료수 선택</p>
+    <select>
+        <optgroup label="커피">
+            <option value="아메리카노">아메리카노</option>
+            <option value="라떼">라떼</option>
+            <option value="에스프레소">에스프레소</option>
+        </optgroup>
+        <optgroup label="티">
+            <option value="아이스티">아이스티</option>
+            <option value="민트">민트</option>
+            <option value="레몬차">레몬차</option>
+        </optgroup>
+    </select>
+    <br>
+    <br>
+    <h1>Datalist</h1>
+    <p>여러 요소 중 하나를 선택하는 드롭다운목록 + 글자 입력 가능</p>
+    
+    <!-- input의 list 속성 값과 datalist의 id 값이 반드시 일치하여야 함 -->
+    <label for="">당신이 좋아하는 음료 선택</label>
+    <input type="text" list="drink">
+    <datalist id="drink">
+        <option value="아메리카노">아메리카노</option>
+        <option value="라떼">라떼</option>
+        <option value="에스프레소">에스프레소</option>
+    </datalist>
+
+
+
+
+</body>
+</html>

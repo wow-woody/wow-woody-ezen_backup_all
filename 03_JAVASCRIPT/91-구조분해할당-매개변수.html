@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 사칙 연산 함수
+        function myCaculator(op, ...num) {
+            let result = 0;
+            if (op === "add") {
+                // num = [1, 2, 3, 4]
+                // result = 0+1 +2 +3 +4 ==>10
+                for(n of num) {
+                    result += n;
+                }
+                document.write (`더하기: ${result} <br>`)
+
+            }
+            else if (op === "mul") {
+                let result = 1;
+                for(n of num) {
+                    result *= n;
+                }
+                document.write (`곱하기: ${result}  <br>`)
+            }
+            // else (op === "mul") {
+
+            // }
+        }
+        myCaculator("add", 1, 2, 3, 4);
+        myCaculator("minus", 10, 5);
+        myCaculator("mul", 2, 3, 5);
+
+    </script>
+</head>
+<div>복습하세요</div>
+<body>
+
+</body>
+
+</html>

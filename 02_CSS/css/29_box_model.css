@@ -1,0 +1,19 @@
+.box1 {
+    background: pink;
+    width: 600px;
+    height: 150px;
+}
+
+/* %부모가 기준 */
+.box2 {
+background: skyblue;
+width: 50%;
+height: 200%;
+}
+
+/* 인라인은 너비 높이를 가질 수 없다. */
+span{
+background: green;
+width: 600px;
+height: 100px;
+}

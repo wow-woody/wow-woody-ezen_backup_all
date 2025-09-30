@@ -1,0 +1,36 @@
+/* 공통사항 */
+
+/* 모든 여백 제거 */
+* {
+    margin: 0;
+    padding: 0;
+
+
+/* 리스트 장식 제거 */
+li {
+    list-style: none;
+}
+
+
+/* a 밑줄 및 기본 색상으로 변경 */
+a {
+    text-decoration: none;
+    /*  부모의 color 속성을 상속받아서 사용하겠다. */
+    color: inherit;
+    /* color: unset; */
+}
+
+
+/* img, video 위 아래 정렬 */
+img, video {
+    vertical-align: middle;
+}
+
+
+/* em, i, address 기본속성으로 변경 */
+em, i, address {
+    font-style: none;
+}
+
+
+

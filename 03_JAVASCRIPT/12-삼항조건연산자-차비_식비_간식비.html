@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 차비, 식비, 간식비, 입력받아서
+        // 합계 20000원이 
+        // 넘어가면"용돈 관리가 필요합니다"
+        // 이하면 "참 잘했어요"를 출력하기
+
+        // 기본적으로 prompt로 입력히만 문자로 인식(prompt)
+        // 숫자 계산의 합한 값을 구하고 싶으면 prompt 앞에 +를 붙이기
+        //prompt 앞에 +를 붙이기 숫자로 인식(+prompt)
+        
+
+        // 차비  
+
+        let bmw = +prompt("교통비를 입력하세요", "")
+
+        // 식비
+        let lunch = +prompt("식비를 입력하세요", "")
+
+        // 간식비
+        let drink = +prompt("간식비를 입력하세요", "")
+
+        // 앞에서 입력한 값들의 합계
+        let total = bmw + lunch + drink;
+        console.log(total)
+
+
+         // 합계 20000원이 
+        // 넘어가면"용돈 관리가 필요합니다" (참 - true)
+        // 이하면 "참 잘했어요"를 출력하기 (거짓 - false)
+
+        total > 20000 ? document.write("용돈 관리가 필요합니다") : document.write("참 잘했어요")
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

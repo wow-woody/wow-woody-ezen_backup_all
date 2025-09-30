@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 칸 합치기</title>
+    <style>
+        table, th, td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+<body>
+    <h1>버스요금표</h1>
+    <table>
+        <tr>
+            <th colspan="3">구분</th>
+            <!-- <th></th> -->
+            <!-- <th></th> -->
+            <th>일반</th>
+            <th>청소년</th>
+            <th>어린이</th>
+        </tr>
+        <tr>
+            <td rowspan="4">일반버스</td>
+            <td rowspan="2">카드</td>
+            <td>현행</td>
+            <td>1,000원</td>
+            <td>770원</td>
+            <td>400원</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <td>조정</td>
+            <td>1,250원</td>
+            <td>850원</td>
+            <td>400원</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td rowspan="2">현금</td>
+            <td>현행</td>
+            <td>1,200원</td>
+            <td>900원</td>
+            <td>500원</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <td>조정</td>
+            <td>1,400원</td>
+            <td>1,000원</td>
+            <td>500원</td>
+        </tr>
+    </table>
+   
+
+</body>

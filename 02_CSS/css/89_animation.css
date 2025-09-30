@@ -1,0 +1,48 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    background: deepskyblue;
+    border-radius: 100px;
+    position: absolute;
+
+    /* 애니메이션 이름 지정 */
+    animation-name: cirleAni;
+
+    /* 애니메이션 시간 지정 */
+    animation-duration: 5s;
+
+    /* 애니매이션 반복 지정 - 무한반복 인피니트 */
+    animation-iteration-count: infinite;
+
+    /* 애니메이션 왕복 설정(?) */
+    animation-direction: alternate;
+}
+
+@keyframes cirleAni {
+    /* from{
+        left: 10px;
+        top: 10px;
+    }
+
+    to {
+        left: 800px;
+        top: 500px;
+} */
+
+    0% {
+        left: 10px;
+        top: 10px;
+    }
+
+    50% {
+        left: 1000px;
+        top: 10px;
+
+    }
+
+    100% {
+        left: 800px;
+        top: 500px;
+
+    }
+}

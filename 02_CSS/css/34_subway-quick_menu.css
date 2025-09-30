@@ -1,0 +1,25 @@
+.store > a, .franchise > a {
+    display: block;
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.store > a {
+    background: #ffce32 url(../img/icon_map.png) no-repeat 80px center;
+    border-radius: 30px 0 0 0;
+    color: #1a1a1a;
+    text-indent: 120px;
+}
+
+.franchise > a{
+    background: #009223 url(../img/icon_franchise.png) no-repeat 60px center;
+    border-radius: 0 0 30px 0;
+    color: #ffffff;
+    text-indent: 110px;
+}
+

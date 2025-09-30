@@ -1,0 +1,24 @@
+/* ul의 첫번째 자식 li 글자크기, 대문자 */
+.list > li:first-child{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* .list 마지막 자식인 li 글자 두껍게, 밑줄 */
+.list > li:last-child {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+/* 짝수번째 자식을 선택하여 배경 핑크 */
+/* 숫자/2 나머지가 0 1 2n* */
+.list > li:nth-child(2n) {
+    background: pink;
+}
+
+/*  홀수번째 자식을 선택하여 배경을 하늘색 */
+/* 2n+1 */
+.list > li:nth-child(2n+1) {
+    background: skyblue;
+}

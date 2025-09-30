@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: pink;
+            height: 150px;
+            /* 자식이 인라인요소 */
+            /* text-align: center;
+            line-height: 150px; */
+
+            /* 자식이 인라인, 블럭 모두 가능 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .layout {
+            background-color: skyblue;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 200px;
+        }
+
+        .pos {
+            background-color: lightslategray;
+            /* relative는 아래 마크업에 영향을 안줌 */
+            /* 처음 생성되었을때 크기를 그대로 유지한다 */
+            /* position: relative; */
+
+            /* 해상도와 상관없이 완쪽 오른쪽 여백이 항상 10% 유지되도록 */
+            /* !주의! 아래 마크업 요소들이 딸려서 올라온다 */
+            /* position: absolute;
+            left: 10%;
+            right: 10%; */
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pos .posChild {
+            background-color: lightseagreen;
+            width: 300px;
+            height: 200px;
+        }
+
+        .pos span {
+            background-color: lightgoldenrodyellow;
+            /* width: 300px;
+            height: 200px; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>제목</h1>
+    <h1><img src="./images/icon_map.png" alt=""><img src="./images/icon_map.png" alt=""></h1>
+
+    <div class="layout">layout</div>
+
+    <div class="pos">
+        <div class="posChild">block</div>
+        <span>inline</span>
+    </div>
+    <hr>
+    <div class="pos">
+        <p><img src="./images/11870_01.webp" alt=""></p>
+        <p class="posText">여기는 position !absolute! 항상 가운데 위치</p>
+    </div>
+    <footer>여기는 하단</footer>
+</body>
+
+</html>

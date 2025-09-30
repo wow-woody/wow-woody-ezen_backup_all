@@ -1,0 +1,318 @@
+:root {
+    --main-color: #ef4da2;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+.inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: rgba(255, 0, 0, 0.1);
+    position: relative;
+}
+
+.new-in-wrap {
+    background: rgba(141, 182, 243);
+    padding: 10rem 0;
+    font-size: 1.6rem;
+    color: #fff;
+
+}
+
+.section-title {
+    font-size: 6rem;
+}
+
+.new-in-wrap .new-in {
+    display: flex;
+}
+
+.new-in-wrap .title-box .section-title {
+    color: #01a799;
+}
+
+.new-in-wrap .title-box .sub-title {
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.new-in-wrap .title-box .outline-title {
+    font-size: 10rem;
+    font-weight: 900;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+
+.new-in-wrap .new-item-img {
+    position: absolute;
+    width: 47%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+        width: 100%;
+    }
+}
+
+.new-item-img .item-title {
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin: 7rem 0 2rem;
+}
+
+.new-in-wrap .shop-now-btn>a {
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 16px 0;
+    margin: 50px 0 0;
+}
+
+
+.new-in-wrap .shop-now-btn a p {
+    overflow: hidden;
+}
+
+.new-in-wrap .shop-now-btn>a span {
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.new-in-wrap .shop-now-btn>a span::after {
+    content: "ShowNow";
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.new-in-wrap .shop-now-btn>a:hover span {
+    transform: translateY(-100%);
+}
+
+.arrow-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.arrow-list>li>a {
+    background: #fff;
+    display: flex;
+    padding: 10px 24px;
+    border-radius: 50px;
+}
+
+
+.arrow-list>li>a img {
+    transition: 0.3s;
+}
+
+.arrow-list>li:first-child>a:hover img {
+    transform: translateX(-10px);
+}
+
+.arrow-list>li:last-child>a:hover img {
+    transform: translateX(10px);
+}
+
+
+/* summer */
+
+.summer-wrap {
+    padding: 10rem 0;
+    font-size: 1.6rem;
+    background: #f0ffeb;
+
+
+}
+
+.summer-wrap .section-title {
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+
+}
+
+.summer-wrap .summer-tab-title {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 2rem 0 5rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #777;
+}
+
+.summer-tab-title .active {
+    color: var(--main-color);
+
+}
+
+.summer-tab-title .active::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--main-color);
+    border-radius: 5px;
+    top: 0;
+    right: -6px;
+}
+
+
+.sunsade-list {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 4rem;
+    gap: 30px;
+}
+
+
+.sunsade-list>.sunsade-item {}
+
+.sunsade-list>.sunsade-item>.img-box {
+    position: relative;
+    background: #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+
+}
+
+.sunsade-list>.sunsade-item .wish-icon {
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    width: 32px;
+    height: 32px;
+    background: url(../img/icon_heart_gray.png);
+    z-index: 10;
+}
+
+
+.sunsade-list>.sunsade-item .wish-icon.wish-check {
+    background: url(../img/icon_heart.png);
+
+}
+
+.sunsade-list>.sunsade-item img {
+    width: 100%;
+}
+
+.sunsade-list>.sunsade-item .hover-img {
+    position: absolute;
+    top: o;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.sunsade-list>.sunsade-item:hover .hover-img {
+    opacity: 1;
+}
+
+.sunsade-item .text-box {
+    padding: 3rem 2rem;
+}
+
+.sunsade-item .text-box .price-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.sunsade-item .text-box .price-wrap span {
+    color: #777;
+    text-decoration: line-through;
+
+}
+
+.sunsade-item .text-box .price-wrap .sale {
+    color: var(--main-color);
+    font-weight: 700;
+
+}
+
+
+.sunsade-item .text-box .cart {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    font-weight: 700;
+
+
+}
+
+.arrow-list.summer-arrow>li:last-child>a {
+    background: var(--main-color);
+}
+
+/* 1024px 이하가 되면 */
+/* 기본 글자 크기 7px */
+/* .new-in-wrap의 그림이 중간으로  */
+/* 좌우 화살표가 오른쪽 아래로 */
+
+@media screen and (max-width:1024px) {
+    html {
+        font-size: 8px;
+    }
+
+    .new-in-wrap .new-item-img {
+        position: static;
+        transform: translateY(0);
+    }
+
+    .new-in-wrap .inner {
+        display: flex;
+        align-items: flex-end;
+        justify-items: center;
+        gap: 100px
+    }
+
+    .sunsade-list {
+        /* 100% 자식의 개수 / 보고 싶은 개수 */
+        width: calc(100%*4 / 1.5);
+    }
+}
+
+@media screen and (max-width 767px) {
+    .section-title {
+        font-size: 4rem;
+    }
+
+    .new-in-wrap .inner {
+        gap: 5rem;
+    }
+
+    .new-in-wrap .title-box .outline-title {
+        font-size: 5rem;
+    }
+
+    .new-in-wrap .shop-now-btn>a {
+        padding: 1rem 4rem;
+        display: inline-block;
+    }
+
+    .summer-wrap .summer-tab-title {
+
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+
+    .arrow-list {
+        position: absolute;
+        right: 20px;
+    }
+
+    .arrow-list.summer-arrow {
+        display: none;
+    }
+}

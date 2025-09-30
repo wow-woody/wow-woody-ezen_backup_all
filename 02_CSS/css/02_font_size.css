@@ -1,0 +1,28 @@
+/* 전체 선택자로 모든 글자의 크기를 20px로 변경 */
+/* 글자의 기본 크기는 16px */
+
+
+* {
+    font-size: 20px;
+
+}
+
+
+
+
+/* 클래스 unit-em을 선택하여 글자크기를 기본 크기에서 2배로 만들기 */
+
+.unit-em {
+    color: blue;
+    font-size: 2em;
+
+}
+
+
+/* 클래스 unit-rem을 선택하여 글자크기를 루ㅡ 맨 상단의 기본 크기의 2배로 만들기 */
+
+
+.unit-rem{
+    color: red;
+    font-size: 2rem;
+}

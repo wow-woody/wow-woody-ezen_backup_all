@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // 1. 배열 복사
+        let arr1 = [1, 2, 3];
+        let arr1Copy = [...arr1];
+        document.write(arr1Copy + "<br>");
+
+
+        // 2. 배열 합치기
+        let arr2 = [10, 20, 30];
+        let arrMerge = [...arr1, ...arr2];
+        document.write(arrMerge + "<br>");
+
+
+        // 3. 배열에 요소 추가
+        let arrAdd = [0, ...arr1, 4];
+        document.write(arrAdd + "<br>");
+
+
+        // 4. 함수의 매개값
+        function add(x, y, z,) {
+            return x+y+z;
+        }
+        let result = add(1,2,3);
+        // let result = add(...arr1);
+        document.write(result + "<br>");
+
+
+        // //5. 객체 복사
+        let obj1 = {a:1, b:1};
+        let obj1Copy = {...obj1};
+        console.log (obj1Copy);
+
+        // //6. 객체합치기
+        let user = { name: "홍길동"};
+        let info = {age:20, job:"의적"};
+        let userMerge = {...user, ...info};
+        console.log(userMerge)
+
+        // 7. 객체 덮어쓰기
+        let settings = {theme : "light", lang:"en"}
+        let newSettngs = {...settings,lang:"ko"}
+        console.log(newSettngs);
+
+
+        // 함수 sum 함수 만들기
+        function sum(x,...y){
+            
+            return  x * y.length;   // return 첫번째 값 * 나머지의 길이;
+        }
+        let hap = sum(2,1,2,3,4);
+        document.write(hap + "<br>");
+
+        // 이전 버전 - 베열
+        //배열은 순서를 가지는 데이터들의 잡함체
+        let number = [11, 22, 33,];
+        let newNumber = [0, number[0],number[1],number[2],100]   //[0, 11, 22, 33, 100]
+        document.write(newNumber + "<br>");
+
+        // es6 spread 연산자
+        // [1, 11,22,33,999]
+        let newNumBer2 = [1, ...number, 999]
+        document.write(newNumBer2 + "<br>")
+        
+
+        // 객체(object)
+        // 키(속성, 메서드)와 값, 명령어를 가진다.
+        // 객체 접근하기 키로 접근한다
+
+
+        let people1= {
+            name:"홍길동",
+            age:20,
+            hobby:"도적"
+        }
+        let pInfo = {
+            name:people1.name,
+            age: people1.age,
+            hoby: people1.hobby,
+            job:"의사",
+        }
+        console.log(pInfo);
+
+        //es6 - 최신 버전 스프레드 연산자 쓰기
+        let pInfo2 = {
+            ...people1,
+            job:"변호사",
+        }
+        console.log(pInfo2);
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

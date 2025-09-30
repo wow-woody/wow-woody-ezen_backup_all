@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/76-아코디언.css">
+    <script>
+        let vision = document.querySelectorAll(".vision");
+        vision.forEach(v => {
+            v.addEventListener("click",() => {
+                visions.forEach(el => el.classList.remove(".active"))
+                v.classList.add(".active")
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="vision-wrap">
+        <div class="inner">
+            <div class="vision active"><a href="#"><span>01</span></a></div>
+            <div class="vision"><a href="#"><span>02</span></a></div>
+            <div class="vision"><a href="#"><span>03</span></a></div>
+            <div class="vision"><a href="#"><span>04</span></a></div>
+            <div class="vision"><a href="#"><span>05</span></a></div>
+            <div class="vision"><a href="#"><span>06</span></a></div>
+        </div>
+    </div>
+</body>
+</html>
