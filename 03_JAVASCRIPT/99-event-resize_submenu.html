@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/99-resize.css">
+</head>
+<body>
+    
+    <header>
+        <div class="inner">
+            <h1 class="logo"><a href="#"><img src="./img/top-logo.png" alt=""></a></h1>
+            <div class="nav-wrap">
+                <ul class="m-gnb">
+                    <li><a href="#">gnb1</a></li>
+                    <li><a href="#">gnb2</a></li>
+                </ul>
+
+                <!-- ul.main-menu>li*3>a[href="#"]+ul.depth1>lt*5>a[href="#"]{submenu$} -->
+                 <ul class="main-menu">
+                    <li>
+                        <a href="#">menu-1</a>
+                        <ul class="depth1">
+                            <lt><a href="#">submenu1</a></lt>
+                            <lt><a href="#">submenu2</a></lt>
+                            <lt><a href="#">submenu3</a></lt>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu-2</a>
+                        <ul class="depth1">
+                            <lt><a href="#">submenu1</a></lt>
+                            <lt><a href="#">submenu2</a></lt>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu-3</a>
+                        <ul class="depth1">
+                            <lt><a href="#">submenu1</a></lt>
+                            <lt><a href="#">submenu2</a></lt>
+                            <lt><a href="#">submenu3</a></lt>
+                            <lt><a href="#">submenu4</a></lt>
+                            <lt><a href="#">submenu5</a></lt>
+                        </ul>
+                    </li>
+                 </ul>
+                <!-- p.close-btn>a>[href="#"] -->
+                 <p class="close-btn"><a href=""><img src="./img/btn_close.svg" alt=""></a></p>
+            </div>
+            <!-- ul.gnb>li*2>a[href="#"]{gnb$}
+            p.han-btn>a[href="#"] -->
+            <ul class="gnb">
+                <li><a href="#">gnb1</a></li>
+                <li><a href="#">gnb2</a></li>
+            </ul>
+            <p class="ham-btn"><a href="#"><img src="./img/icon-menu.svg" alt=""></a></p>
+
+        </div>
+    </header>
+
+
+
+    <main>
+        <img src="./img/slider.jpg" alt="">
+    </main>
+
+
+</body>
+</html>
