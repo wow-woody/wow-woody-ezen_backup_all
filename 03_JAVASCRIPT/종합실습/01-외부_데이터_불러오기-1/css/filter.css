@@ -1,0 +1,25 @@
+.menu-container {
+    max-width: 800px;
+    margin: 400px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+
+    .menu-wrap {
+        .menu-list{
+            display: flex;
+            gap: 10px;
+            
+            li {
+                button{
+                    background: #eee;
+                    padding: 5px 20px;
+
+                    &.active {
+                        background: #222;
+                        color: #fff;
+                    }
+                }
+            }   
+        }
+    }
+}

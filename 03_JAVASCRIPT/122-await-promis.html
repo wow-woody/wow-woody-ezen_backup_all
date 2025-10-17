@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 1초 뒤에 콘솔에 1초가 출력되는 함수
+
+        function msg() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("1초");
+                }, 1000);
+            });
+        }
+
+        async function run() {
+            let result = await msg();
+            console.log(result);
+            
+        }
+    </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
