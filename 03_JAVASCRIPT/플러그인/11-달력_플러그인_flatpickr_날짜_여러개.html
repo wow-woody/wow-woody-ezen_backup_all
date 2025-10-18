@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/rangePlugin.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
+
+    <script>
+
+        window.onload = function () {
+            let showDate = document.querySelector(".showDate");
+            flatpickr(".startDate", {
+                "plugins": [new rangePlugin({ input: ".endDate" })],
+                minDate: "today",
+                maxDate: "2025-12-31",
+                onChange: function (selectdDates, dateStr, instance) {
+                    console.log(selectdDates.length);
+                    console.log(dateStr);
+                    console.log(instance);
+                    if (selectdDates.length === 1) {
+                        // 출발일만 선택
+                        // 시작 날짜를 저장할 변수
+                        let start = instance.formatDate(selectdDates[0], "Y-m-d");
+                        showDate.innerHTML = `출발일 : ${start}`;
+                    }
+                    else if (selectdDates.length === 2) {
+                        // 출발일 도착일 둘다 선택
+                        let start = instance.formatDate(selectdDates[0], "Y-m-d");
+                        let end = instance.formatDate(selectdDates[1], "Y-m-d");
+                        showDate.innerHTML = `출발일 : ${start} / 도착일 : ${end}`;
+                    }
+                    else {
+                        //아무것도 선택안함
+                    }
+
+                }
+            })
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div>
+        <strong>출발 날짜 : </strong>
+        <input type="text" class="startDate">
+    </div>
+
+    <div>
+        <strong>도착 날짜 : </strong>
+        <input type="text" class="endDate">
+    </div>
+
+    <div class="showDate"></div>
+
+</body>
+
+</html>

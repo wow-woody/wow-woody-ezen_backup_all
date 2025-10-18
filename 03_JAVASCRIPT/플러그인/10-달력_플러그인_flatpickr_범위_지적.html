@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        window.onload = function () {
+            let showDate = document.querySelector(".startEndDate")
+            flatpickr("#myDate", {
+                mode: "range",   //날짜 범위 및 다중선택 명령어
+                maxDate: "2025-12-31",  // 최대 선택 날자 명령어
+                onChange: function (selectdDates, dateStr, instance) {
+                    // console.log(selectdDates); 
+                    // console.log(dateStr);
+                    // console.log(instance);
+
+                    // selectdDates.length
+                    // selectdDates 배열의 길이가 
+                    // 1이면 출발 날짜만 보여주고 
+                    // 2개이면 출발 날짜와 도착 날짜를 보여지게 
+                    console.log(selectdDates.length);
+                    console.log(dateStr);
+                    console.log(instance);
+                    if (selectdDates.length === 1) {
+                        // 출발일만 선택
+                        // 시작 날짜를 저장할 변수
+                        let start = instance.formatDate(selectdDates[0], "Y-m-d");
+                        showDate.innerHTML = `출발일 : ${start}`;
+                    }
+                    else if (selectdDates.length === 2) {
+                        // 출발일 도착일 둘다 선택
+                        let start = instance.formatDate(selectdDates[0], "Y-m-d");
+                        let end = instance.formatDate(selectdDates[1], "Y-m-d");
+                        showDate.innerHTML = `출발일 : ${start} / 도착일 : ${end}`;
+                    }
+                    else {
+                        //아무것도 선택안함
+                    }
+
+                }
+            })
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <input type="text" id="myDate">
+    <div class="startEndDate"></div>
+</body>
+
+</html>

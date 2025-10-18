@@ -1,0 +1,43 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: dodgerblue;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+
+
+/* #box2  마우스를 올리면 크기가 2배 */
+#box2:hover {
+    /* width: 200px;
+    height: 200px; */
+    transform: scale(2);
+}
+
+
+/* #box3 마우스를 올리면 기울기  */
+#box3:hover {
+    transform: skewX(45deg);
+}
+
+
+/* #box4 마우스를 올리면 회전 */
+/* #box4 {
+    transition: 0.5s;
+} */
+#box4:hover {
+    transform: rotate(180deg);
+}
+
+
+/* #box5 크기 변화 및 회전 */
+#box5:hover {
+    transform: scale(2) rotate(360deg);
+}
+
+
+/* a href=box1 - target */
+#box1:target {
+    transform: translate(500px,200px);
+}

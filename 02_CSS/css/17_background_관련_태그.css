@@ -1,0 +1,20 @@
+h2{
+    background-color: aqua;
+}
+
+
+/* 클래스가 .img_box 배경 그림 넣기 */
+.img_box{
+    line-height: 400px;
+    background-image: url(../img/summit_logo_v2.png);
+    background-repeat: no-repeat;
+}
+
+/* 문서 전체에 배경 그림 화면 가운데 스크롤이 이동해도 그 자리에 있도록 */
+
+body{
+    background-image: url(../img/NT7UR53D_2.jpg);
+    background-repeat:no-repeat;
+    background-position: center 300px;
+    background-attachment: fixed;
+}

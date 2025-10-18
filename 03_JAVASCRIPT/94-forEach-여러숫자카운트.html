@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .goods-list>div {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+
+            // 변수 선언하기
+            let minusBtn = document.querySelectorAll('.goods-list .minus');
+            let plusBtn = document.querySelectorAll('.goods-list .plus');
+            let total = document.querySelector('.total span');
+
+            // 총함계를 구하는 함수(구해줄 함수)
+            function updateTotal() {
+                console.log("updateTotal 호출됨!");
+                let totalSum = 0;
+                //
+                let items = document.querySelectorAll('.goods-list > div'); // .goods-list의 자식 
+                console.log(items);
+
+                items.forEach((item) => {
+                    let price = parseInt(item.querySelector('.items-name strong').innerText); // strong 태그의 내용
+                    console.log(price);
+
+                    let count = parseInt(item.querySelector('.button-wrap span').innerText); // span 태그의 내용
+                    console.log(count);
+
+                    totalSum += (price * count); // 총합계 구하기
+                    console.log(totalSum);
+                });
+                // 계산된 총합계를 화면에 업데이트
+                total.innerText = totalSum;
+                
+            }
+
+            //plusBtn을 클릭하면 앞에오는 span의 숫자 내용이 1씩 증가되면서 바뀌도록
+            // plusBtn[0].addEventListener('click',() {
+            // plusBtn[1].addEventListener('click',() {
+            plusBtn.forEach((btn) => {
+                btn.addEventListener("click", () => {
+
+                    // 선택한 버튼에 앞에 오는 span 태그 선택
+                    let spanCount = btn.previousElementSibling; // nextElementSibling은 선택한 요소의 다음 형제 요소를 선택
+                    let count = parseInt(spanCount.innerText); //parseInt는 문자열을 숫자로 변환
+                    count++;
+
+                    // 숫자를 1씩 증가시켜서 내용으로 출력해서 보여주기
+                    spanCount.innerText = count;
+                    updateTotal(); // 총합계 구하는 함수 호출
+                });
+            });
+
+            // minusBtn을 클릭하면 앞에오는 span의 숫자 내용이 1씩 감소되면서 바뀌도록
+            minusBtn.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    let spanCount = btn.nextElementSibling;
+                    let count = parseInt(spanCount.innerText);
+                    if (count > 0) {    // if (count > 0)는 0보다 작아지지 않도록 조건걸기
+                        count--;
+                        spanCount.innerText = count;
+                        updateTotal(); // 총합계 구하는 함수 호출
+                    }
+                });
+            });
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="goods-wrap">
+        <div class="goods-list">
+            <!-- div.count$*3>(div.items-name>strong)>div.button-wrap>button+span+button -->
+            <div class="count1">
+                <div class="items-name">
+                    <strong>1000</strong>
+                </div>
+                <div class="button-wrap">
+                    <button class="minus">-</button>
+                    <span>0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="count2">
+                <div class="items-name">
+                    <strong>2000</strong>
+                </div>
+                <div class="button-wrap">
+                    <button class="minus">-</button>
+                    <span>0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="count3">
+                <div class="items-name">
+                    <strong>3000</strong>
+                </div>
+                <div class="button-wrap">
+                    <button class="minus">-</button>
+                    <span>0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="total">총합계:<span>0</span>원</div>
+    </div>
+</body>
+
+</html>

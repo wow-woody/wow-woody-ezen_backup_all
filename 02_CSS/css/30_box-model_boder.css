@@ -1,0 +1,36 @@
+div {
+    width: 300px;
+    height: 200px;
+    background: pink;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* .box1 테두리 두께 2px 선의 종류 실선, 색은 빨강 */
+.box1 {
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+}
+
+
+/* .box2 테두리를 두께 5px 선은 dashed 색은 초록 */
+.box2 {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: green;
+}
+
+
+/* .box3 오른쪽 10px, 선 실선, 색 파랑 */
+.box3{
+    border-right: 10px solid blue;
+}
+
+
+/* .box4 테두리 outline로 값 넣기 */
+.box4 {
+    outline: 10px solid black
+}

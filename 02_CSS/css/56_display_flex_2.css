@@ -1,0 +1,35 @@
+.wrap {
+    background:antiquewhite;
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.wrap > div {
+    width: 200px;
+    border: 1px solid black;
+}
+
+.box1{
+    height: 50px;
+
+}
+
+.box2{
+    height: 100px;
+}
+
+.box3{
+    height: 150px;
+}
+
+.box4{
+    height: 200px;
+}
+
+.box5{
+    height: 250px;
+}

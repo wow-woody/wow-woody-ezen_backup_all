@@ -1,0 +1,54 @@
+body {
+    background: #222;
+}
+
+
+
+.button {
+    width: 300px;
+    height: 80px;
+    border-radius: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00bbff+0,00bbff+0,0094ff+9,0094ff+53,00bbff+78,0094ff+100 */
+    background: linear-gradient(to bottom,  #00bbff 0%,#00bbff 0%,#0094ff 9%,#0094ff 53%,#00bbff 78%,#0094ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    border: 1px solid #fff;
+    position: relative;
+
+
+
+}
+
+
+.button::before{
+    content: "";
+    display: block;
+    width: 290px;
+    height: 70px;
+    border-radius: 50px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e0f3fa+0,63beff+30,63beff+70,7cc0ff+100&1+0,0+30,0+30,0+70,1+99 */
+background: linear-gradient(to bottom,  rgba(224,243,250,1) 0%,rgba(99,190,255,0) 30%,rgba(99,190,255,0) 70%,rgba(123,192,255,1) 99%,rgba(124,192,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+
+}

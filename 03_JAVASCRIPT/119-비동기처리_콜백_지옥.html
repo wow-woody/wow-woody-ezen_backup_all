@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //비동기 처리 콜백 지옥 setTimeout
+
+        //1초 뒤 - 안녕
+
+        // 안녕이 출력 된 후 1초 뒤에 - 또 안녕
+
+        // 또 안녕 후에 1초 뒤 -  반가워!
+        setTimeout(() => {
+            console.log("안녕");
+            setTimeout(() => {
+                console.log("또 안녕");
+                setTimeout(() => {
+                    console.log("반가워!");
+            }, timeout);
+        }, 1000);
+    } , 1000);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

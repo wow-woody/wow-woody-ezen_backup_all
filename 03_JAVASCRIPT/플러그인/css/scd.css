@@ -1,0 +1,131 @@
+.inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: rgba(255,0,0,0,0.3);
+}
+
+
+/* main-slider */
+.main-slider-wrap {
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+
+}
+
+.mainslider {}
+
+.slider-list {
+    display: flex;
+    width: 400%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: auto;
+    color: transparent;
+}
+
+/* .swiper-button-prev */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.arrow-btn {}
+
+.arrow-btn > li > a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-btn > .arrow-left > a {
+    left: 20px;
+}
+
+.arrow-btn > .arrow-right > a {
+    right: 20px;
+}
+
+/* .pager-btn {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    gap: 20px;
+    
+}
+
+.pager-btn > li > a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.pager-btn > .active > a {
+    width: 60px;
+    background:var(--main-color);
+} */
+
+/* pager-btn */
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+
+}
+
+.swiper-pagination-bullet-active {
+    
+}
+
+
+.scroll-wrap {
+    position: absolute;
+    left:50%;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: scrollAni 2s infinite alternate;
+    z-index: 100;
+    transform:translateX(-50%)
+}
+
+@keyframes scrollAni{
+    0%{
+        bottom: 50px;
+        opacity: 0.3;
+    }
+
+    100%{
+        bottom: 70px;
+    }
+}
+.scroll-wrap > .scroll {
+    width: 36px;
+    height: 58px;
+    border: 5px solid #fff;
+    border-radius: 40px;
+}
+
+.scroll-wrap > .scroll > span {
+    display: block;
+    width: 4px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}
+
+.scroll-wrap > p {
+    color: #fff;
+    font-size: 1.2rem;
+   
+}

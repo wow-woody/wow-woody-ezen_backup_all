@@ -1,0 +1,33 @@
+/* sunway  */
+/* 메인 컬러 초록 #009223 */
+/* 서브 컬로 노랑 #ffce32 */
+/* 제목 글자 크기 40px */
+
+
+:root {
+    /* 변수 입력 방법*/
+    /*  --변수명:값  */
+    /* 한글, 영어 대소문자, 숫자, - ,_ 사용가능 */
+
+    --메인컬러:#009223;
+    --subColor: #ffce32;
+    --titleSize:40px
+}
+
+header{
+    border-top: 100px solid var(--메인컬러);
+}
+
+
+
+.logo {
+    color: var(--메인컬러);
+}
+
+section > h2 {
+    background: var(--subColor);
+    font-size: var(--titleSize);
+}
+
+
+

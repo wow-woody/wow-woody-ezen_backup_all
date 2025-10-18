@@ -1,0 +1,94 @@
+/* 1280px 이하 */
+@media screen and (max-width:1028px) {
+    .main-menu {
+        gap: 3rem
+    }
+    
+    .gnb {
+        gap: 1.3rem;
+    }
+    section. title {
+        font-size: 3rem;
+    }
+
+    .only-tab-list li a {
+        padding: 0.9rem 0.5rem;
+    }
+
+}
+
+
+/* 1024 이하 */
+
+@media screen and (max-width:1024px){
+    /* 기본글씨 크기: 12px */
+    .inner {
+        padding: 0 20px;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+    /* 1.제거하기 - 메인 메뉴 및 일부 아이콘 제거하기 */
+    .main-menu,
+    .m-hide {
+        display: none !important;
+    }
+    /* 2.보이기 - 햄버거 버튼 보여주기 */
+    .ham-btn {
+        display: block !important;
+    }
+    /* 3. 100% 만들기 */
+
+
+    /* footer .inner에 준 flex를 취소하여
+       footer-left와 footer-right를 다른 줄로 변경 */
+        footer .inner {
+            display: block;
+            padding: 3rem 20px;
+        }
+        .footer-right .sns-list {
+            justify-content: flex-start;
+            margin-top: 1.5rem;
+        }
+
+        .footer-right .footer-menu{
+            display: flex;
+            gap:20px;
+            flex-wrap: wrap;
+        }
+}
+    
+
+
+
+
+/* 768px 이하 */
+@media screen and (max-width:768px) {
+        /* 기본글씨 크기: 12px */
+    html {
+        font-size: 12px;
+    }
+
+    header .inner {
+        line-height: 56px;
+    }
+
+
+
+    .logo img {
+        width: 111px;
+    }
+
+
+
+    .ham-btn img {
+        width: 24px;
+    }
+    /* 1.제거하기 */
+    /* 2.보이기 */
+    /* 3. 100% 만들기 */
+
+
+    
+}

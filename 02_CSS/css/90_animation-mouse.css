@@ -1,0 +1,97 @@
+header {
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    width: 100px;
+}
+
+.inner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 200px;
+    img {
+        width: 100%;
+    }
+}
+
+
+main {
+    height: 100vh;
+    background: url(../img/250700_캠핑기획전_메인상단배너_PC.jpg) center center;
+    background-size: cover;
+}
+
+.mouse-wrap {
+    position: absolute;
+    background-color: aqua;
+    bottom: 100px;
+    left: 50%;
+    /* 정 가운데 보내야할 때 트랜스폼 값주기 */
+    transform: translate(-50%);
+     animation: mouseAni 1s alternate infinite linear ;
+     
+}
+
+
+.mouse {
+    width: 22px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+   
+
+}
+
+
+.mouse span {
+    display: block;
+    width: 4px;
+    height: 8px;
+    border-radius: 4px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    animation: mouseDot 3s infinite;
+ 
+}
+
+
+@keyframes mouseAni {
+
+    form {
+        bottom: 100px;
+    }
+
+    to {
+        bottom :50px;
+        opacity: 0.3;
+
+    }
+}
+
+
+
+@keyframes mouseDot {
+    0%{
+        top:10px;
+        opacity: 0.7;
+    }
+
+    50%{
+        top: 20px;
+        opacity: 0.9;
+    }
+
+    100%{
+        top: 50px;
+        opacity: 0;
+    }
+}

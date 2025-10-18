@@ -1,0 +1,190 @@
+.only-you-wrap .title {
+    margin-bottom: 0;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.only-tab-list {
+    display: flex;
+    gap: 10px;
+}
+
+.only-tab-list li a {
+    display: block;
+    padding: 16px 24px;
+    border: 1px solid #092729;
+    border-radius: 30px;
+    font-size: 1.13rem;
+}
+
+.only-tab-list li a:hover {
+    background: #ddd;
+}
+
+.only-tab-list li.active a {
+    background: #092729;
+    color: #fff;
+    font-weight: 600;
+}
+
+.only-slider-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.only-slider-list>div {
+    position: relative;
+    /* border: 1px solid blue; */
+    padding: 2% 0;
+    border-radius: 40px 40px 0 40px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.only-slider-list>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.only-slider-list>div .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.only-slider-list>div .text-box {
+    position: absolute;
+    bottom: 50px;
+    /* left:50%;
+    transform:translateX(-50%); */
+    font-size: 1.13rem;
+    background-color: rgba(0, 0, 255, 0.1);
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+.only-slider-list>div .radius {
+    width: 75px;
+    height: 75px;
+    background: red;
+    background: #fff;
+    border-radius: 40px 0 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.only-slider-list>div .radius::before {
+    content: "";
+    display: block;
+    background: green;
+    background: transparent;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: -80px;
+    bottom: 0;
+    box-shadow: 40px 40px 0 yellow;
+    box-shadow: 40px 40px 0 #fff;
+}
+
+.only-slider-list>div .radius::after {
+    content: "";
+    display: block;
+    background-color: hotpink;
+    background: transparent;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -80px;
+    box-shadow: 40px 40px 0 orange;
+    box-shadow: 40px 40px 0 #fff;
+}
+
+.only-slider-list>div:hover .hover-img {
+    opacity: 1;
+}
+
+.only-slider-list>div:hover .text-box {
+    color: #fff;
+}
+
+.only-slider-list>div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background: #092729 url(../images/arrow-right-thin.svg) no-repeat center center;
+    z-index: 1000;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.only-slider-list>div:hover::after {
+    right: 0;
+    bottom: 0;
+}
+
+/* .sellection 자식들을 옆으로 붙이기 */
+.sellection {
+    display:flex;
+        
+}
+
+/* 자식들의 너비는 동일하게 */
+.sellection>div {}
+
+/* .sellection>div  img 너비를 100% */
+.sellection>div img {
+    width:100%;
+}
+
+/* .sel-right 자식을 좌우, 위아래 가운데로 보내기  */
+.sel-right {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-left:95px;
+}
+
+.sel-right .text-box {
+    text-align: center;
+}
+
+/* 글자크기 32 */
+.sel-right .text-box strong {
+    font-size:2rem;
+}
+
+/* 기본 18 */
+.sel-right .text-box p {
+    font-size:1.13rem;
+    margin:20px 0;
+}
+/* 26 */
+.sel-right .text-box .more {
+    background:var(--default);
+    color:#fff;
+    display:inline-block;
+    padding:12px 30px;
+    border-radius:30px;
+}

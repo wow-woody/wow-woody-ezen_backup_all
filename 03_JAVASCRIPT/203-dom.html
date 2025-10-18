@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .css5 {
+            font-size: 30px;
+            color: green;
+            background : blue
+        }
+
+        .remove {
+            text-decoration: underline;
+            background-color: skyblue;
+        }
+
+        .bg {
+            background: pink;
+            color: red;
+        }
+
+        .box {
+            width:  400px;
+            height: 300px;
+            padding: 40px;
+            border: 5px solid black;
+            background: dodgerblue;
+            box-sizing: border-box; /* width에 padding, border 포함 */
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            let app = document.querySelector(".app");
+            app.append("@@@추가됨"); //내용 추가 명령여
+
+
+            
+            let innerApp = document.querySelector(".innerApp" );
+            innerApp.innerHTML = "html로 변경하기";  //내용 변경 명령어
+            innerApp.innerText = "Text로 변경하기"; //텍스트로 변경 명령어  
+            innerApp.textContent = "Content"; //텍스트로 변경 명령어
+
+            // let innerApp = document.querySelector(".innerApp" );
+            // innerApp.innerHTML = "<h2>html로 변경하기</h2>";   //html 자체를 변경하는 명령어
+            innerApp.innerText = "<h2>text로 변경하기</h2>";   //html이 아닌 텍스토로 인식해 변경하는 명령어
+            // innerApp.textContent = "Content";
+
+
+
+            let css1 = document.querySelector(".css1");
+            css1.style.backgroundColor = "pink";
+
+            let css2 = document.querySelector(".css2");
+            css2.style["fontSize"] = "30px";
+
+            let css3 = document.querySelector(".css3");
+            css3.style.setProperty("color", "green");
+
+            let css4 = document.querySelector(".css4");
+            css4.style.cssText = "color: blue; background-color: skyblue;";   // css에 저장된 style의 값을 그대로 가져오는 명령어
+
+         
+
+            let css5 = document.querySelector(".css5");
+            let css4Color = css4.style.getPropertyValue("background-color");
+            console.log(css4Color);
+
+            let css5Color = window.getComputedStyle(css5);
+            console.log(css5Color.background);
+
+            // 태그의 속석값을 가져오기, 변경하기
+            let myimg = document.querySelector(".myImg img");
+            let srcImg = myimg.getAttribute("src");
+            console.log(srcImg);
+
+            myimg.setAttribute("src", "./img/logo_bottom.png");
+            myimg.src="./img/logo_bottom.png";
+
+
+            // //class List
+            let addClass = document.querySelector(".add");
+            let removeClass = document.querySelector(".remove");
+            let toggleClass = document.querySelector(".toggle");
+            let hasClass = document.querySelector(".has");
+
+
+            
+            addClass.classList.add("bg");   // addClass에 bg라는 클래스를 추가
+            removeClass.classList.remove("remove"); //removeClass에 remove라는 클래스를 제거
+            // hasClass.classList.contains("bg"); //hasClass에 bg라는 클래스가 있는지 확인, 있으면 true, 없으면 false
+            console.log(hasClass.classList.contains("bg")); //hasClass에 bg라는 클래스가 있는지 확인, 있으면 true, 없으면 false
+            toggleClass.addEventListener("click", function(){
+                toggleClass.classList.toggle("bg"); //toggleClass에 bg라는 클래스가 있으면 제거, 없으면 추가
+            });
+            
+            //.list 첫번째 li를 복사하여 .list마지막에 추가하기
+            let list = document.querySelector(".list")
+            
+            // list 첫번째 자식
+            let first = list.firstElementChild.cloneNode(true);
+
+            // list 마지막 자식
+            let last = list.lastElementChild.cloneNode(true);
+
+            // list 끝에 븥이기
+            list.appendChild(first);
+
+            //list 맨 앞에 붙이기
+            list.prepend(last);
+
+            //list의 자식의 개수
+            console.log(list.children.length);
+            console.log(list.childElementCount);
+
+            //
+            let box = document.querySelector(".box");
+            
+            //box의 offsetWidth width :400px, padding:40px, border:5px 포함된 값 나옴
+            console.log(box.offsetWidth);  //490
+
+            //box의 clientWidth width:400px, padding:40px 포함된 값 나옴
+            console.log(box.clientWidth);
+
+
+            //window 너비 확인하기
+            console.log(window.innerWidth); //스크롤바 포함
+            console.log(window.outerWidth); //스크롤바 미포함   
+
+
+        }
+    </script>
+
+</head>
+<body>
+    <h1>dom</h1>
+
+    <h2>텍스트 변셩 및 자식 추가</h2>
+    <p class="app">append, appendChild - 추가</p>
+    <p>innerHtml, innerText, textContent - 내용변경</p>
+    <p class="innerApp">이곳에 변경됩니다.</p>
+
+    <h2>속성 변경 및 가져오기</h2>
+    <p class="css1">선택자.style.속성 ="값"</p>
+    <p class="css2">선택자.style["속성"] ="값"</p>
+    <p class="css3">선택자.style.setProperty("속성", "값");</p>
+    <p class="css4">선택자.style.cssText = "속성: 값;속성:값;";</p>
+    <p class="css5">css스타일가져오기</p>
+
+
+
+    <hr>
+
+    <h2>태그 속성 변경 및 가져오기</h2>
+    <p class="myImg"><img src="./img/day.jpg" alt="어린이 책상"></p>
+
+    <p>setAttribute - 속성값 가져오기</p>
+    <p>속성="값" /  getAttribute - 속성 변경하기</p>
+
+    <hr>
+
+
+
+    <h2>class 추가, 삭제, 토글</h2>
+    <p class="add">classList.add('클래스명') :  클래스 추가 </p>
+    <p class="remove">classList.remove("클래스명") : 클래스 제거</p>
+    <p class="toggle">classList.toggle() : 클래스 토글, 클래스 추가/제거</p>
+    <p class="has">classList.contains("클래스명") : 클래스 존재 여부 확인</p>
+ 
+    <hr>
+
+
+
+
+    <h2>복사하여 추가하기</h2>
+    <p>cloneNode 복사하기</p>
+    <ul class="list">
+        <li><a href="#">list11</a></li>
+        <li><a href="#">list2</a></li>
+    </ul>
+    
+
+    <h2>요소의 너비 및 높이</h2>
+    <p>offsetWidth</p>
+    <p>clientWidth</p>
+    <p>window.innerWidth</p>
+    <p>window.outerWidth</p>
+    <p></p>
+    <p class="box"></p>
+
+</body>
+</html>

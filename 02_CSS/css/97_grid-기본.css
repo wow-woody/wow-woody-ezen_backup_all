@@ -1,0 +1,38 @@
+.wrap {
+    background: skyblue;
+    width: 800px;
+
+}
+
+
+
+.wrap > div {
+    border: 1px solid black;
+    background: pink;
+}
+
+
+/* flexwrap */
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+
+.flexwrap > div {
+    width: 250px;
+}
+
+
+/* gridwrap */
+
+.gridwrap {
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3,200px); */
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}

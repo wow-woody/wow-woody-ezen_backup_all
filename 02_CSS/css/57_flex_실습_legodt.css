@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+/* 이미지와 글자에 들어가는 baseline이 달라서 그림은 공간이 생김 - 공간 제거 */
+img{
+    vertical-align: middle;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: "Outfit", sans-serif;
+}
+header {
+    background: #FFF;
+    border-bottom: 1px solid #eee;
+}
+
+
+.inner {
+    max-width: 1600px;
+    background: rgba(255,0,0,0.2);
+    margin: 0 auto;
+}
+
+/* header */
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left{
+    display: flex;
+    gap: 40px;
+        align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.main-menu > li > a, 
+.gnb > li > a {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.main-menu > :first-child > a{
+    color: #e1cb20
+}
+
+
+.header-right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+}
+
+
+.header-right ul {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+
+
+/* main */
+
+.sub-slider {
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.sub-slider > p > img {
+    width: 100%;
+}
+
+
+.container {
+    background: rgb(255, 229, 229);
+}
+.container .title{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 120px 0 80px;
+}
+
+.life-list {
+    display: flex;
+    /* 모든 자식들 정릴 명령어 */
+    justify-content: center;
+    gap: 64px;
+    text-align: center;
+}
+
+
+
+.life-list a .img-box {
+    border: 2px solid #FFF;
+    border-radius: 1000px;
+
+}
+
+.life-list a .text-box {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 24px;
+    
+}
+.life-list a:hover .img-box{
+    border-color:  #ef4da2;
+}
+
+.life-list a:hover .text-box{
+    color:  #ef4da2;
+}
+

@@ -1,0 +1,20 @@
+
+
+/* 클래스 title을 선택하여 가운데 정렬 */
+
+.title{
+    text-align: center;
+}
+
+
+
+/* 모든 p태그는 양쪽 정렬 */
+p {
+    text-align: justify;
+}
+
+
+/* 클래스 right를 선택해서 정렬 */
+.right {
+    text-align: end;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <p>xhtml 기본요소</p>
+
+
+    <form name="member" method="get" action="./24_welcome.html">
+        <p>
+            <label for="uName">이름</label>
+            <input type="text" id="uName" name="uName">
+        </p>
+        <p>
+            <label>아이디<input></label>
+        </p>
+        <p>
+            <label>비밀번호<input type="password" name="uPass" id="uPass"></label>
+        </p>
+        <p>
+            성별
+            <label>남자<input type="radio" name="gender" id="man"></label>
+            <label>여자<input type="radio" name="gender" id="women" checked></label>
+            <!--  기본으로 선택 상태로 실행 checked(우선 선택된 상태)  -->
+        </p>
+
+        <p>취미
+            <label>독서<input type="checkbox" name=""></label>
+            <label>필라테스<input type="checkbox" name=""></label>
+        </p>
+        <p>
+            <lebel>사진<input type="file"></lebel>
+        </p>
+        <p>
+            <label for="tel">전화번호</label>
+            <input id="tel" title=" 첫번째" maxlength="4" size="4"> -
+            <input title="전화번호 중간" maxlength="4" size="4"> -
+            <input title="전화번호 마지막" maxlength="4" size="4">
+        </p>
+        <p>
+            <input value="검색어를 입력하세요">
+            <input type="image" src="./img/icon/cart-thin-32.png" alt="장바구니 버튼">
+        </p>
+        <p>
+            <input type="submit" value="회원가입">
+            <input type="reset"  value="취소">
+        </p>
+
+    </form>
+    
+
+
+
+</body>
+</html>

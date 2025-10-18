@@ -1,0 +1,25 @@
+li {
+    list-style: none;
+}
+
+/* width, height, text-indent는 블록요소에만 줄 수 있는 명령어 */
+.sns_list > li > a {
+    display: block;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    text-indent: -99999999999px;
+}
+
+
+.sns_list > .sns1 > a {
+    background-image: url(../img/icon_face.png);
+}
+
+.sns_list > .sns2 > a {
+    background-image: url(../img/icon_insta.png);
+}
+
+.sns_list > li > a:hover {
+    background-position: -50px;
+}

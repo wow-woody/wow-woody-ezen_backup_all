@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        let promise = new Promise((resolve1, reject1) => {
+            //비동기 작업 수행
+            let success = true; //작업 성공 여부
+
+            if (success) {
+                resolve1('작업 성공');
+            } else {
+                reject1('작업 실패');
+            }
+        });
+
+        promise.then(result1 => {
+            console.log(result1); //작업 성공
+        }).catch(error1 => {
+            console.error(error); //작업 실패
+        });
+
+    </script>
+
+
+</head>
+<body>
+    <h1>프로미스 promise</h1>
+    <p>자바스크립트의 비동기처리 방식 중 하나로,</p>
+    <p>작업한 결과물이 성공할 수 있고, 실패할 수도 있는 상황을 다룰 때</p>
+
+    <pre>
+        new promise((resolve,reject)=> {
+            if(성공!){
+                resolve('작업 성공');
+            }; 
+            else {
+                reject('작업 실패');            
+            };
+        });
+        변수.then (result => {
+            //작업 성공
+        }).catch(error => {
+            //작업 실패
+        })
+    </pre>
+</body>
+</html>

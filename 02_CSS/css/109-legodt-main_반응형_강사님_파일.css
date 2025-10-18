@@ -1,0 +1,118 @@
+html{
+    font-size:10px;
+}
+.inner{
+    max-width:1600px;
+    margin:0 auto;
+    padding:0 20px;
+    background-color:rgba(255,0,0,0.1);
+    position:relative;
+}
+.section-title{
+    font-size:6rem;
+}
+.new-in-wrap{
+    background:rgb(141,182,243);
+    padding:10rem 0;
+    font-size:1.6rem;
+    color:#fff;
+}
+.new-in-wrap .new-in{
+    display: flex;
+}
+.new-in-wrap .title-box .section-title{
+    color:#01a799;
+}
+.new-in-wrap .title-box .sub-title{
+    font-size:3.6rem;
+    font-weight:800;
+}
+.new-in-wrap .title-box .outline-title{
+    font-size: 10rem;
+    font-weight:900;
+    -webkit-text-stroke: 1px #fff;
+    color:transparent;
+}
+.new-in-wrap .new-item-img{
+    position:absolute;
+    width:47%;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+
+    img{
+        width:100%;
+    }
+}
+.new-in-wrap .item-title{
+    font-size:2.4rem;
+    font-weight: 900;
+    margin:7rem 0 2rem;
+}
+.new-in-wrap .shop-now-btn>a{
+    display: block;
+    border:1px solid #fff;
+    border-radius:50px;
+    text-align: center;
+    padding:16px 0;
+    margin:50px 0 0;
+}
+.new-in-wrap .shop-now-btn>a p{
+    /* border:1px solid black; */
+    overflow: hidden;
+}
+.new-in-wrap .shop-now-btn>a span{
+    position: relative;
+    display: inline-block;
+    transition:0.3s;
+}
+.new-in-wrap .shop-now-btn>a span::after{
+    content:"Shop Now";
+    position:absolute;
+    top:100%;
+    left:0;
+}
+.new-in-wrap .shop-now-btn > a:hover span{
+    transform: translateY(-100%);
+}
+
+.arrow-list{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-top: 50px;
+}
+.arrow-list>li>a{
+    background:#555;
+    display: flex;
+    padding:10px 24px;
+    border-radius: 50px;
+}
+.arrow-list>li>a img{
+    transition:0.3s;
+}
+.arrow-list>li:first-child>a:hover img{
+    transform: translateX(-10px);
+}
+.arrow-list>li:last-child>a:hover img{
+    transform: translateX(10px);
+}
+
+/* 1024이하이면  
+기본글자크기 7px 
+.new-in-wrap 그림이 중간으로
+좌우화살표가 오른쪽 아래로 */
+@media screen and (max-width:1024px){
+    html{
+        font-size:8px;
+    }
+    .new-in-wrap .new-item-img{
+        position:static;
+        transform: translateY(0);
+    }
+    .new-in-wrap .inner{
+        display:flex;
+        align-items: flex-end;
+        gap:100px;
+    }
+}

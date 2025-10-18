@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+</head>
+
+<body>
+    <!-- 1. header -->
+    <!-- ul.main-menu>li*5>a[href="#"]+ul.depth1>li*3>a[href="#"]{submenu$} -->
+    <header>
+        <div class="wide-inner flex inner">
+            <h1 class="logo">
+                <a href="#"><img src="./img/Legodt_logo_w.svg" alt="레고트 로고 흰색"></a>
+            </h1>
+            <div class="header-left">
+                <p class="ham-btn">
+                    <a href="#"><img src="./img/icon_menu_w.svg" alt="메인 메뉴 버튼"></a>
+                </p>
+                <nav>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#">Tumggu</a>
+                            <ul class="depth1">
+                                <li><a href="#">submenu1</a></li>
+                                <li><a href="#">submenu2</a></li>
+                                <li><a href="#">submenu3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">New</a>
+                            <ul class="depth1">
+                                <li><a href="#">submenu1</a></li>
+                                <li><a href="#">submenu2</a></li>
+                                <li><a href="#">submenu3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Tumbler</a>
+                            <ul class="depth1">
+                                <li><a href="#">submenu1</a></li>
+                                <li><a href="#">submenu2</a></li>
+                                <li><a href="#">submenu3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Life</a>
+                            <ul class="depth1">
+                                <li><a href="#">submenu1</a></li>
+                                <li><a href="#">submenu2</a></li>
+                                <li><a href="#">submenu3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Bag</a>
+                            <ul class="depth1">
+                                <li><a href="#">submenu1</a></li>
+                                <li><a href="#">submenu2</a></li>
+                                <li><a href="#">submenu3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="header-right">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">Promotion</a>
+                        <ul class="depth1">
+                            <li><a href="#">submenu1</a></li>
+                            <li><a href="#">submenu2</a></li>
+                            <li><a href="#">submenu3</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="#">Brand</a>
+                        <ul class="depth1">
+                            <li><a href="#">submenu1</a></li>
+                            <li><a href="#">submenu2</a></li>
+                            <li><a href="#">submenu3</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+                <ul class="gnb-icon">
+                    <li><a href="#"><img src="./img/icon_search_w.svg" alt="서치 아이콘"></a></li>
+                    <li><a href="#"><img src="./img/icon_user_w.svg" alt="내정보 아이콘"></a></li>
+                    <li><a href="#"><img src="./img/icon_cart_w.svg" alt="장바구니 아이콘"><span
+                                class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. main-slider -->
+    <main>
+        <!-- main-slider -->
+        <div class="main-slider-wrap inner">
+            <!-- div.main-slider>div.slider>div.img-box+div.text-box -->
+            <div class="main-slider">
+                <div class="slider-1 acive">
+                    <div class="img-box">
+                        <img src="./img/main_banner_01.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h2 class="slider-title">A Lazy Sunday for Myself</h2>
+                        <p class="explication">느릿한 일요일의 여유를 닮은 테이블웨어,<br>레이지선데이</p>
+                        <p class="shop-now-btn"><a href="#">Shop Now</a></p>
+                    </div>
+                </div>
+                <div class="slider-2">
+                    <div class="img-box">
+                        <img src="./img/main_banner_02.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h2 class="slider-title">Summer Toast</h2>
+                        <p class="explication">한 모금의 여름, 한 잔의 컬러.<br>레고트 와인잔</p>
+                        <p class="shop-now-btn"><a href="#">Shop Now</a></p>
+                    </div>
+                </div>
+                <div class="slider-3">
+                    <div class="img-box">
+                        <img src="./img/main_banner_03.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h2 class="slider-title">Play My Way UMGGU</h2>
+                        <p class="explication">레고트 텀꾸랜드에<br>여러분을 초대합니다.</p>
+                        <p class="shop-now-btn"><a href="#">Shop Now</a></p>
+                    </div>
+                </div>
+                <div class="slider-4">
+                    <div class="img-box">
+                        <img src="./img/main_banner_04.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h2 class="slider-title">This is How We Summer</h2>
+                        <p class="explication">매일을 나답게 만드는<br>레고트의 여름 루틴</p>
+                        <p class="shop-now-btn"><a href="#">Shop Now</a></p>
+                    </div>
+                </div>
+            </div>
+            <ul class="slider-pager">
+                <li class="acive"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+
+        </div>
+        <div class="container inner">
+            <section class="Category-wrap">
+                <div class="inner">
+                    <h2 class="section-title">Shop by Category</h2>
+                    <!-- div.Category-list>div.Cate*5>div.img-box+div.text-box -->
+                    <div class="Category-list">
+                        <div class="Cate">
+                            <a href="#">
+                                <div class="img-box"><img src="./img/Shop_by_Category_img_1.jpg" alt=""></div>
+                                <div class="text-box">Tumbler</div>
+                            </a>
+                        </div>
+                        <div class="Cate">
+                            <a href="#">
+                                <div class="img-box"><img src="./img/Shop_by_Category_img_2.jpg" alt=""></div>
+                                <div class="text-box">Life</div>
+                            </a>
+                        </div>
+                        <div class="Cate">
+                            <a href="#">
+                                <div class="img-box"><img src="./img/Shop_by_Category_img_3.png" alt=""></div>
+                                <div class="text-box">Bag</div>
+                            </a>
+                        </div>
+                        <div class="Cate">
+                            <a href="#">
+                                <div class="img-box"><img src="./img/Shop_by_Category_img_4.jpg" alt=""></div>
+                                <div class="text-box">Lighting</div>
+                            </a>
+                        </div>
+                        <div class="Cate">
+                            <a href="#">
+                                <div class="img-box"><img src="./img/Shop_by_Category_img_5.png" alt=""></div>
+                                <div class="text-box">Acc</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Make-Your-Wrap">
+                <h2 class="section-title">Make Your Own</h2>
+                <div class="make-your loved">
+                    <div class="img-box">
+                        <img src="./img/42193_01.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <p class="legodt_logo_w"><img src="./img/Legodt_logo_w.svg" alt=""></p>
+                        <h2 class="slider-title">What's Your Tumbler?</h2>
+                        <p class="explication">나만의 레고트 텀블러 만들어 보기</p>
+                        <p class="shop-now-btn lets-btn"><a href="#">Let's Start</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="loved-by-wrap">
+                <div class="inner">
+                    <h2 class="section-title">Loved By You</h2>
+                    <!-- div.love-by-list>div.loved>span.num+div.img-box+div.text-box -->
+                    <!-- div.love-by-list-top>div.loved>span.num+div.img-box+div.text-box  -->
+                    <!-- div.love-by-list-bottom>div.loved>span.num+div.img-box+div.text-box -->
+                    <div class="love-by-list-top">
+                        <div class="loved">
+                            <span class="num">1</span>
+                            <div class="img-box">
+                                <a href="#">
+                                    <p><img src="./img/42205_01.webp" alt="보이는 이미지"></p>
+                                    <p class="hover-img"><img src="./img/42205_V1.png" alt="호버 이미지"></p>
+                                </a>
+                                <p class="heart-icon"><a href="#"></a></p>
+                            </div>
+                            <div class="text-box">
+                                <p><a href="#">루프 텀블러 멀티 400ml (핑크)</a></p>
+                                <div class="price-wrap">
+                                    <div class="price">
+                                        <strong>32,000</strong>
+                                        <span>39,000</span>
+                                    </div>
+                                    <p class="sale">10%</p>
+                                </div>
+                                <a href="#" class="add-cart">Add to Cart +</a>
+                            </div>
+                        </div>
+                        <div class="loved">
+                            <span class="num">2</span>
+                            <div class="img-box">
+                                <a href="">
+                                    <p><img src="./img/42211_1.webp" alt="보이는 이미지"></p>
+                                    <p class="hover-img"><img src="./img/42211_V1.png" alt="호버 이미지"></p>
+                                </a>
+                                <p class="heart-icon"><a href="#"></a></p>
+                            </div>
+                            <div class="text-box">
+                                <p><a href="#">루프 텀블러 핸디 1000ml (그라데이션블루)</a></p>
+                                <div class="price-wrap">
+                                    <div class="price">
+                                        <strong>42,000</strong>
+                                        <span>52,000</span>
+                                    </div>
+                                    <p class="sale">19%</p>
+                                </div>
+                                <a href="#" class="add-cart">Add to Cart +</a>
+                            </div>
+                        </div>
+                        <div class="loved">
+                            <span class="num">3</span>
+                            <div class="img-box">
+                                <a href="">
+                                    <p><img src="./img/42213_01.webp" alt="보이는 이미지"></p>
+                                    <p class="hover-img"><img src="./img/42213_V1.png" alt="호버 이미지"></p>
+                                </a>
+                                <p class="heart-icon"><a href="#"></a></p>
+                            </div>
+                            <div class="text-box">
+                                <p><a href="#">루프 텀블러 멀티 600ml (핑크)</a></p>
+                                <div class="price-wrap">
+                                    <div class="price">
+                                        <strong>37,000</strong>
+                                        <span>45,000</span>
+                                    </div>
+                                    <p class="sale">18%</p>
+                                </div>
+                                <a href="#" class="add-cart">Add to Cart +</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="love-by-list-bottom">
+                    <div class="loved">
+                        <span class="num">4</span>
+                        <div class="img-box">
+                            <a href="">
+                                <p><img src="./img/11935_01.webp" alt="보이는 이미지"></p>
+                                <p class="hover-img"><img src="./img/11935_01.webp" alt="호버 이미지"></p>
+                            </a>
+                            <p class="heart-icon"><a href="#"></a></p>
+                        </div>
+                        <div class="text-box">
+                            <p><a href="#">아크릴 링 (레인보우)</a></p>
+                            <div class="price-wrap">
+                                <div class="price">
+                                    <strong>7,000</strong>
+                                    <span></span>
+                                </div>
+                                <p class="sale"></p>
+                            </div>
+                            <a href="#" class="add-cart">Add to Cart +</a>
+                        </div>
+                    </div>
+                    <div class="loved">
+                        <span class="num">5</span>
+                        <div class="img-box">
+                            <a href="">
+                                <p><img src="./img/42215_01.webp" alt="보이는 이미지"></p>
+                                <p class="hover-img"><img src="./img/42215_V1.png" alt="호버 이미지"></p>
+                            </a>
+                            <p class="heart-icon"><a href="#"></a></p>
+                        </div>
+                        <div class="text-box">
+                            <p><a href="#">루프 텀블러 멀티 1000ml (머스타드)</a></p>
+                            <div class="price-wrap">
+                                <div class="price">
+                                    <strong>42,000</strong>
+                                    <span>52,000</span>
+                                </div>
+                                <p class="sale">19%</p>
+                            </div>
+                            <a href="#" class="add-cart">Add to Cart +</a>
+                        </div>
+                    </div>
+                    <div class="loved">
+                        <span class="num">6</span>
+                        <div class="img-box">
+                            <a href="">
+                                <p><img src="./img/47121_1.webp" alt="보이는 이미지"></p>
+                                <p class="hover-img"><img src="./img/47121_V1.png" alt="호버 이미지"></p>
+                            </a>
+                            <p class="heart-icon"><a href="#"></a></p>
+                        </div>
+                        <div class="text-box">
+                            <p><a href="#">텀꾸 하트 키링 2 (실버)</a></p>
+                            <div class="price-wrap">
+                                <div class="price">
+                                    <strong>13,500</strong>
+                                    <span>15,000</span>
+                                </div>
+                                <p class="sale">10%</p>
+                            </div>
+                            <a href="#" class="add-cart">Add to Cart +</a>
+                        </div>
+                    </div>
+                    <div class="loved">
+                        <span class="num">7</span>
+                        <div class="img-box">
+                            <a href="">
+                                <p><img src="./img/46874_1.webp" alt="보이는 이미지"></p>
+                                <p class="hover-img"><img src="./img/46874_V1.png" alt="호버 이미지"></p>
+                            </a>
+                            <p class="heart-icon"><a href="#"></a></p>
+                        </div>
+                        <div class="text-box">
+                            <p><a href="#">스트로우 캡 2p 세트 L</a></p>
+                            <div class="price-wrap">
+                                <div class="price">
+                                    <strong>16,200</strong>
+                                    <span>18,000</span>
+                                </div>
+                                <p class="sale">10%</p>
+                            </div>
+                            <a href="#" class="add-cart">Add to Cart +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><span>More</span>
+                        <i><img src="./img/icon-more_plus.svg" alt="more icon 더보기 아이콘"></i>
+                    </a>
+                </div>
+            </section>
+            <section class="new-in-wrap">
+                <div class="inner">
+                    <h2 class="section-title">New In</h2>
+                    <p class="section--sub-title">EASY FOLDING</p>
+                    <p class="line-text">SUNSHADE</p>
+                    <p><img src="./img/46881_1.webp" alt="배너이미지"></p>
+                    <strong>이지폴딩 UV차단 양우산 (베이지)</strong>
+                    <p>17cm의 컴팩트한 사이즈로 어디든지 쏙,<br>이지 폴링 시스템으로 펼칠 때도, 접을 때도 한결 가볍게.</p>
+                    <p class="shop-now-btn"><a href="@"><span>Show Now</span></a></p>
+                    <ul class="arrow-btn">
+                        <li><a href="#"><img src="./img/icon-arrow-left.svg" alt="왼쪽 화살표"></a></li>
+                        <li><a href="#"><img src="./img/icon-arrow-right.svg" alt="오른쪽 화살표"></a></li>
+                    </ul>
+                </div>
+            </section>
+                    <section class="new-in-wrap">
+            <div class="inner">
+                <div class="new-in">
+                    <div class="new-left">
+                        <div class="title-box">
+                            <h2 class="section-title">New In</h2>
+                            <p class="sub-title">EASY FOLDING</p>
+                            <p class="outline-title">SUNSHADE</p>
+                        </div>
+                        <p class="new-item-img"><img src="./img//46881_1.webp" alt=""></p>
+                        <p class="item-title">이지폴링 uv 차장 양우산(베이지)</p>
+                        <p class="item-describe">17cm의 컴팩트한 사이즈 어디든 쏙<br>
+                            이지 폴링 시스템으로 펼칠 때도, 접을 대도 한결 가볍게</p>
+                        <div class="shop-now-btn">
+                            <a href="#void">
+                                <p><span>Shop Now</span></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="new-right">
+                    </div>
+                </div>
+                <ul class="arrow-list">
+                    <li><a href="#void"><img src="./img/icon-arrow-left-thin.svg" alt="left icon"></a>
+                    </li>
+                    <li><a href="#void"><img src="/img/icon-arrow-right-thin.svg" alt="right icon"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+            <section class="summer-sorted-wrap">
+                <div class="inner">
+                    <h2 class="section-title">Summer, Sorted</h2>
+                    <ul class="tab-menu-list">
+                        <li class="acive"><a href="#">Sunshade</a></li>
+                        <li><a href="#">Tumbler</a></li>
+                        <li><a href="#">Pack Light</a></li>
+                        <li><a href="#">Add-Ons</a></li>
+                    </ul>
+                    <div class="summer-sored-list">
+                        <div class="suhsade-list">
+                            <div class="sumer loved">
+                                <div class="img-box">
+                                    <a href="">
+                                        <p><img src="./img/42205_01.webp" alt="보이는 이미지"></p>
+                                        <p class="hover-img"><img src="./img/42205_V1.png" alt="호버 이미지"></p>
+                                    </a>
+                                    <p class="heart-icon"><a href="#"></a></p>
+                                </div>
+                                <div class="text-box">
+                                    <p><a href="#">루프 텀블러 멀티 400ml (핑크)</a></p>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <strong>32,000</strong>
+                                            <span>39,000</span>
+                                        </div>
+                                        <p class="sale">10%</p>
+                                    </div>
+                                    <a href="#" class="add-cart">Add to Cart +</a>
+                                </div>
+                            </div>
+                            <div class="sumer loved">
+                                <div class="img-box">
+                                    <a href="">
+                                        <p><img src="./img/42205_01.webp" alt="보이는 이미지"></p>
+                                        <p class="hover-img"><img src="./img/42205_V1.png" alt="호버 이미지"></p>
+                                    </a>
+                                    <p class="heart-icon"><a href="#"></a></p>
+                                </div>
+                                <div class="text-box">
+                                    <p><a href="#">루프 텀블러 멀티 400ml (핑크)</a></p>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <strong>32,000</strong>
+                                            <span>39,000</span>
+                                        </div>
+                                        <p class="sale">10%</p>
+                                    </div>
+                                    <a href="#" class="add-cart">Add to Cart +</a>
+                                </div>
+                            </div>
+                            <div class="sumer loved">
+                                <div class="img-box">
+                                    <a href="">
+                                        <p><img src="./img/42205_01.webp" alt="보이는 이미지"></p>
+                                        <p class="hover-img"><img src="./img/42205_V1.png" alt="호버 이미지"></p>
+                                    </a>
+                                    <p class="heart-icon"><a href="#"></a></p>
+                                </div>
+                                <div class="text-box">
+                                    <p><a href="#">루프 텀블러 멀티 400ml (핑크)</a></p>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <strong>32,000</strong>
+                                            <span>39,000</span>
+                                        </div>
+                                        <p class="sale">10%</p>
+                                    </div>
+                                    <a href="#" class="add-cart">Add to Cart +</a>
+                                </div>
+                            </div>
+                            <div class="sumer loved">
+                                <div class="img-box">
+                                    <a href="">
+                                        <p><img src="./img/42205_01.webp" alt="보이는 이미지"></p>
+                                        <p class="hover-img"><img src="./img/42205_V1.png" alt="호버 이미지"></p>
+                                    </a>
+                                    <p class="heart-icon"><a href="#"></a></p>
+                                </div>
+                                <div class="text-box">
+                                    <p><a href="#">루프 텀블러 멀티 400ml (핑크)</a></p>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <strong>32,000</strong>
+                                            <span>39,000</span>
+                                        </div>
+                                        <p class="sale">10%</p>
+                                    </div>
+                                    <a href="#" class="add-cart">Add to Cart +</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="catalogue-wrap">
+                <div class="inner">
+                    <h2 class="section-title">Catalogue</h2>
+                    <div class="Catalogue-list">
+                        <div class="Catalogue cata-1 loved">
+                            <div class="big-img">
+                                <img src="./img/Catalogue_main-img-1.png" alt="Catalogue main img">
+                                <p class="more-plus-btn"><a href="#"><img src="./img/icon_Catalogue_plus-w.svg"
+                                            alt="more plus"></a></p>
+                                <p class="more-plus-btn"><a href="#"><img src="./img/icon_Catalogue_plus-w.svg"
+                                            alt="more plus"></a></p>
+                                <p class="more-plus-btn"><a href="#"><img src="./img/icon_Catalogue_plus-w.svg"
+                                            alt="more plus"></a></p>
+                            </div>
+                            <div class="tumb-img">
+                                <p><img src="./img/47123_1.webp" alt="썸네일 이미지"></p>
+                                <div class="text-box">
+                                    <p><a href="#">루프 텀블러 멀티 400ml (핑크)</a></p>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <strong>32,000</strong>
+                                            <span>39,000</span>
+                                        </div>
+                                        <span class="sale">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Catalogue loved">
+                            <div class="big-img">
+                                <img src="./img/Catalogue_main-img-1.png" alt="Catalogue main img">
+                                <p class="more-plus-btn"><a href="#"><img src="./img/icon_Catalogue_plus-w.svg"
+                                            alt="more plus"></a></p>
+                                <p class="more-plus-btn"><a href="#"><img src="./img/icon_Catalogue_plus-w.svg"
+                                            alt="more plus"></a></p>
+                                <p class="more-plus-btn"><a href="#"><img src="./img/icon_Catalogue_plus-w.svg"
+                                            alt="more plus"></a></p>
+                            </div>
+                            <div class="tumb-img">
+                                <p><img src="./img/47123_1.webp" alt="썸네일 이미지"></p>
+                                <div class="text-box">
+                                    <p><a href="#">루프 텀블러 멀티 400ml (핑크)</a></p>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <strong>32,000</strong>
+                                            <span>39,000</span>
+                                        </div>
+                                        <span class="sale">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Catalogue loved">
+                            <div class="big-img">
+                                <img src="./img/Catalogue_main-img-1.png" alt="Catalogue main img">
+                                <p class="more-plus-btn"><a href="#"><img src="./img/icon_Catalogue_plus-w.svg"
+                                            alt="more plus"></a></p>
+                                <p class="more-plus-btn"><a href="#"><img src="./img/icon_Catalogue_plus-w.svg"
+                                            alt="more plus"></a></p>
+                                <p class="more-plus-btn"><a href="#"><img src="./img/icon_Catalogue_plus-w.svg"
+                                            alt="more plus"></a></p>
+                            </div>
+                            <div class="tumb-img">
+                                <p><img src="./img/47123_1.webp" alt="썸네일 이미지"></p>
+                                <div class="text-box">
+                                    <p><a href="#">루프 텀블러 멀티 400ml (핑크)</a></p>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <strong>32,000</strong>
+                                            <span>39,000</span>
+                                        </div>
+                                        <span class="sale">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- container 본문영역 -->
+    </main>
+
+    <!-- 3. footer -->
+    <footer>
+        <div class="wide-inner inner">
+            <div class="footer-top">
+                <div class="company-info">
+                    <h2>Company Info</h2>
+                    <address>
+                        <p>
+                            <span>주식회사 브랜드웍스코리아</span>
+                            <span>대표이사 : 박성배</span>
+                            <span>고객센터 : 1577-0103</span>
+                            <span>운영시간 : 09:30 ~ 18:00, (주말/공휴일 휴무)</span>
+                            <span>대량주문/제휴 문의 : legodt.official@cj.net</span>
+                            <span>주소 : 04377 서울 용산구 한강대로23길 55 용산역 아이파크몰 6층 브랜드웍스코리아</span>
+                        </p>
+                        <p>
+                            <span>개인정보보호책임자 : 박성배 (privacy.bki@cj.net)</span>
+                            <span>통신판매업신고번호 : 제 2022-서울용산-1708호</span>
+                            <span>사업자등록번호 : 211-86-68230 </span>
+                            <span>
+                                <a href="#void">[사업자정보확인]</a>
+                            </span>
+                            <span>호스팅제공자 : 카페24(주)</span>
+                        </p>
+                    </address>
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="#void">About</a></li>
+                    <li><a href="#void">Store</a></li>
+                    <li><a href="#void">Cs Center</a></li>
+                    <li><a href="#void">Membership</a></li>
+                    <li><a href="#void">Terms of Service</a></li>
+                    <li><a href="#void">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p class="capy">COPYRIGHTⓒ LEGODT. ALL RIGHTS RESERVED.</p>
+                <ul class="sns-list">
+                    <li><a href="#void"><img src="./images_v2/escrowcmark.png" alt=""></a></li>
+                    <li><a href="#void"><img src="./images_v2/icon_instagram.svg" alt=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        // 모든 a를 선택하여
+        let link = document.querySelectorAll("a");
+        // 
+        links.array.forEach(link => {
+            link.addEventListener("click", function (e) {
+                //기본 기능을 막아주기
+                e.preventDefault();
+            })
+        })
+        //하트 클래스를 선택하여
+        1et heartIcon = document.querySelectorAll(".heart-icon")
+        // 하트를 클릭하면 클릭한 하트에
+        heartIcon.array.forEach("click"=> {
+            //acrive 클래스를 적용해서 핑크가 되도록하고,
+            //핑크인 상태를 다시 클릭하면
+            // active  클래스를 취소되어 회색으로 
+            this.classList.toggle("active");
+            
+        })
+       
+    </script>
+
+</body>
+
+</html>

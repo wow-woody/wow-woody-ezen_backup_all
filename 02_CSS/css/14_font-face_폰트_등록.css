@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Subway font";
+    font-weight: 800;
+    src: url(../font/Subway-SixInch.woff);
+}
+
+@font-face {
+    font-family: "Subway font";
+    font-weight: 400;
+    src: url(../font/Subway-Footlong.woff);
+}
+
+.gfont{
+    font-family: "Outfit";
+}
+
+
+.mfont{
+    font-family: "Subway font";
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>항공사 예매 화면</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>항공사 예매</h2>
+
+    <label>
+        성인 인원수:
+        <input type="number" id="adultCount" min="0" value="0" />
+    </label>
+
+    <label>
+        어린이 인원수:
+        <input type="number" id="childCount" min="0" value="0" />
+    </label>
+
+    <div class="result" id="result"></div>
+    <!-- 기존 내용 아래, total-wrap 바로 위에 추가 (inner 내부) -->
+    <div class="flight-booking" style="margin-top: 50px; border-top: 1px solid #ccc; padding-top: 20px;">
+
+        <div id="flightResult" style="margin-top: 10px; font-weight: bold;"></div>
+    </div>
+
+
+    <script>
+        window.onload = function () {
+            // 기존 window.onload 내부 맨 밑에 추가하세요.
+
+            const adultInput = document.getElementById('adultCount');
+            const childInput = document.getElementById('childCount');
+            const flightResult = document.getElementById('flightResult');
+
+            const adultPrice = 100000;
+            const childPrice = 70000;
+
+            function updateFlightResult() {
+                const adultNum = parseInt(adultInput.value) || 0;
+                const childNum = parseInt(childInput.value) || 0;
+                const totalPrice = adultNum * adultPrice + childNum * childPrice;
+
+                flightResult.textContent = `성인 ${adultNum}명, 어린이 ${childNum}명, 총 금액 ${totalPrice.toLocaleString()}원`;
+            }
+
+            adultInput.addEventListener('input', updateFlightResult);
+            childInput.addEventListener('input', updateFlightResult);
+
+            // 초기 실행
+            updateFlightResult();
+        }
+    </script>
+
+</body>
+
+</html>

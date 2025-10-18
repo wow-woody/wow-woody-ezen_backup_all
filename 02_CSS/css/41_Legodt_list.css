@@ -1,0 +1,72 @@
+/* 공통 적용 */
+/* 모든 요소에 마진 패직 제거 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* a 태그 밑줄 제거 및 색상 */
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+/*  */
+/* .best_wrap 배경색*/
+.best_wrap {
+    background: #f5f5f5;
+}
+
+
+/* 레이아웃 화면의 가운데 */
+/* 바같좌우 여백을 같은 값으로 주면 가운데 들어감 */
+/* 너비 값 필수 입력 */
+/* 너무 값 입력 안하면 마진 값 입력해도 적용안됨 */
+.inner {
+    width: 1680px;
+    background: pink;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 36px;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 160px 0 80px;
+}
+
+.best_list > div {
+    width: 328px;
+}
+
+.best_list > .best_img {
+    background: #f5f5f5;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.best_list > .best_img > img {
+    width: 100%;
+}
+
+
+/* 글자 */
+/* 제목 아래 여백 */
+/* 가격 아래 여백 */
+.best_list > .best_text >.best_price {
+ margin: 8px 0 16px;
+}
+
+.best_list > .best_text >.best_price > del{
+    font-size: 14px;
+    color: #888;
+    padding-left: 10px;
+}
+
+.best_list > .best_text >.best_more {
+    font-weight: bold;
+    text-decoration: underline;
+}

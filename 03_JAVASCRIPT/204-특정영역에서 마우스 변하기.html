@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .notice-wrap {
+            max-width: 1270px;
+            height: 700px; 
+            margin: 0 auto;
+            background: #eee;
+            position: relative;
+        } 
+
+        .notice-btn {
+            /* text-align: center;
+            line-height: 150px; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        .notice-btn > a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background: #0261ef;
+            color: #fff;
+            border-radius: 50%;
+            
+         }
+    </style>
+
+    <script>
+        window.onload = function() {
+            //보여질 영역을 저장할 변수
+            let noticeWrap = document.querySelector(".notice-wrap");
+
+            // 마우스 모양
+            let noticeBtn = document.querySelector(".notice-btn > a");
+
+            // 마우스의 위치를 체크할 변수
+            let x = 0, y=0, cx = 0, cy = 0;
+            // noticeWrap 영역인지를 체크할 변수 - 영역 안: true / 영역 밖: false 
+            let active = false;
+
+            // noticeWrap 영역에 마우스가 들어가면(올라가면)
+            noticeWrap.addEventListener("mouseenter",() => {
+                noticeBtn.classList.add('on');
+                //기본 마우스 모양 숨기기
+                // noticeWrap.style.cursor = 'none';
+
+            });
+
+            // noticeWrap 영역에 마우스가 나가면(벗어나면)
+            noticeWrap.addEventListener("mouseleave", () => {
+                active = false;
+                noticeBtn.classList.remove('on');
+            });
+
+            // noticewrap 영역에 마우스가 움직이면
+            noticeWrap.addEventListener("mousemove", (e) => {
+                // noriceWrap 영역 위치 값, 너비 값, 높이 값 확인하기
+                let rect = noticeWrap.getBoundingClientRect();
+                // console.log(rect.left, rect.top, rect.width, rect.height);
+                console.log(e.clientX, e.clientY);
+                x = e.clientX - rect.left;
+                y = e.clientY - rect.top;
+                             
+            });
+
+            // requestAnimationFrame(자기 자신)
+            function animate () {
+                //현재 위치에서 목표한 위치로
+                cx += (x - cx) * 0.3;
+                cy += (y - cy) * 0.3;
+                noticeBtn.style.left = cx + 'px';
+                noticeBtn.style.top = cy + 'px';
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+
+
+        };
+    </script>
+
+</head>
+<body>
+    
+    <header>header</header>
+
+    <main>
+        <section class="notice-wrap">
+            <div class="notice-btn"><a href="#">View<br>more</a></div>
+        </section>
+    </main>
+
+    <footer>footer</footer>
+</body>
+</html>

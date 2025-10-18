@@ -1,0 +1,55 @@
+.slider_text{
+    width: 840px;
+    height: 780px;
+    background: #34AAC2;
+    border-radius: 0 0 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.slider_text h2 {
+    font-size: 60px;
+    color: #fff;
+
+}
+
+.slider_text p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.slider_text ul li {
+    list-style: none;
+}
+
+.slider_text .more_btn{
+    margin: 0 auto;
+    
+}
+.slider_text .more_btn a{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #1a1a1a;
+    background: #fff;
+    border-radius: 30px;
+}
+.pager_btn > li {
+    display: inline;
+}
+.pager_btn > li > a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+}
+
+/* .pager_btn > li > active {
+ width: 50px;
+ background:  rgba(255,255,255,1);
+
+} */

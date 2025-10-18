@@ -1,0 +1,6 @@
+.small-inner{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 120px 0;
+    background: rgba(red, green, blue, alpha);
+}

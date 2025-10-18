@@ -1,0 +1,189 @@
+/* pc버전 */
+/* 1.숨기기 */
+.ham-btn {
+    display: none;
+}
+
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: rgba(255, 0, 0, 0.2);
+    position: relative;
+}
+
+body {
+    font-size: 16px;
+}
+
+header {
+    border-top: 2px solid #009223;
+}
+
+.logo {
+    text-align: center;
+
+    a {
+        display: flex;
+        justify-content: center;
+        ;
+
+    }
+
+    img {
+        width: 200px;
+    }
+}
+
+.gnb-list {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: 1.25em;
+    margin: 20px 0;
+}
+
+.main-slider {
+    height: 300px;
+    background: rgb(108, 202, 108);
+}
+
+#cantainer {
+    padding: 50px 0;
+
+}
+
+#cantainer .title {
+    font-size: 3em;
+    padding: 30px 0 20px;
+}
+
+.info-wrap {}
+
+.info-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-list>div {
+    height: 200px;
+}
+
+.info-list>.box1 {
+    background: skyblue;
+    width: 24%;
+}
+
+.info-list>.box2 {
+    background: salmon;
+    width: 48%;
+}
+
+.info-list>.box3 {
+    background: chartreuse;
+    width: 24%;
+}
+
+.event-wrap {}
+
+.event-list {
+    display: flex;
+    gap: 2%;
+}
+
+.event-list>div {
+    background: #ccc;
+    height: 100px;
+    flex: 1;
+}
+
+footer {
+    padding: 30px 0;
+    background-color: darkslategray;
+}
+
+/* ipad 1240px */
+@media screen and (max-width:1024px) {
+
+    header {
+        padding: 10px 0;
+        background: rgba(255, 0, 0, 0.2);
+    }
+
+    /* 1. 보이기 */
+    .ham-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+    /* 2. 숨기기 */
+    .gnb-list {
+        display: none;
+    }
+
+    .main-menu {
+        position: fixed;
+        display: block;
+        background: #0cccc0;
+        width: 60%;
+        max-width: 500px;
+        min-width: 230px;
+        right: -100%;
+        top: 0;
+        margin: 0;
+    }
+
+    /* 3. 100% 만들기 */
+
+    /* 순서 바꾸는 코드 */
+    .info-list {
+        /* 넘치는 것을 아래로 떨어트리는 코드 */
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .info-list>.box2 {
+        width: 100%;
+        /* order 순서를 변경할 때 사용 */
+        order: 1
+    }
+
+    .info-list>.box1,
+    .info-list>.box3 {
+        width: 49%;
+        /* order 순서를 변경할 때 사용 */
+        order: 2
+    }
+}
+
+/* Mobile 버전 */
+
+
+@media screen and (max-width:767px) {
+
+
+    body {
+        font-size: 12px;
+    }
+
+
+    .info-list > .box1,
+    .info-list > .box2,
+    .info-list > .box3 {
+        width: 100%;
+        /* order:0 은 아이템은 순서대로 정렬하는 코드 */
+        order:0;
+    }
+
+}

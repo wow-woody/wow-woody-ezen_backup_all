@@ -1,0 +1,32 @@
+a {
+    text-decoration: none;
+}
+
+
+.more-btn > a {
+    display: flex;
+    width: 150px;
+    height: 60px;
+    background: rgb(252, 48, 173);
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.more-btn > a > img {
+    width: 20px;
+    transition: 1s;
+}
+
+.more-btn > a:hover img {
+    transform: rotate(360deg);
+}
+
+
+
+
+
+

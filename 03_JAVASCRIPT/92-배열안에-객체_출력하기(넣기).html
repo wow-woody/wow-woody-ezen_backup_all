@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .person-wrap {
+        } 
+        
+        .person-list {
+            display: flex;
+            gap: 20px;
+        }
+
+        .person-list > li {
+            border: 1px solid #ccc;
+            padding: 30px
+        }
+
+
+    </style>
+    <script>
+        window.onload = function() {
+            // 보여질 영역을 저장할 변수
+            const user = [
+                {name: "kim", age: 40, 성별: "남자"},
+                {name: "lee", age: 100, 성별: "여자"},
+                {name: "hong", age: 30, 성별: "남자"},
+                {name: "휜둥이", age:10, 성별: "남자"},
+                {name: "짱구", age:5, 성별: "남자"},
+                {name: "인어공주", age:20, 성별: "여자"},
+            ];
+            // 남자만 필터링
+            let man = user.filter( m => m.성별 === "남자");
+                console.log(man);
+
+            // ul 태그 생성하기
+            let person = document.createElement('ul');
+            // 생성된 ul태그에 클래스 이름주기
+            // person.className="person-list";              // 1번 방식
+            // person.classList.add('person-list');         // 2번 방식
+            person.setAttribute('class', 'person-list');    // 3번 방식
+
+            // li 태그 생성
+            man.forEach (m => {
+                let li = document.createElement('li');
+
+                // li 안에 내용물 넣기
+                li.innerHTML = `
+                    <h3>${m.name}님</h3>
+                    <p>나이: ${m.age}세</p>
+                    <p>성별: ${m.성별}</p>
+                `;
+
+                //생성한 li를ul 안에 붙이기
+                person.append(li);  
+
+            });
+            let personWrap = document.querySelector('.person-wrap');
+            personWrap.append(person);
+        }
+    </script>
+
+
+</head>
+<body>
+    <h1>filter</h1>
+    <p>배열에 있는 객체 요소를 조건에 맞는 것만 추출하여 새로운 배열 만들기</p>
+    <div class="person-wrap"></div>
+
+    
+</body>
+</html>

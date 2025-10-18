@@ -1,0 +1,59 @@
+div {
+    width: 200px;
+    height: 100px;
+    background: pink;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* .box1 사방의 모서리 둥글게 20px */
+.box1 {
+    border-radius: 20px;
+}
+
+
+/* .box2 왼쪽 위, 오른쪽 아래 10px / 
+왼쪽 아래 오른쪽 위 50px */
+.box2 {
+    border-radius: 10px 50px;
+}
+
+/* .box3 왼쪽위 0 오른쪽 위 왼쪽아래 20 오른쪽 아래20 */
+
+.box3 {
+    /* border-radius: 0 20px 50px; */
+    /* top, left - start */
+    /* botterm-right - end */
+    border-start-start-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 50px;
+}
+
+/* box4 왼쪽 위 20, 오른쪽 위 50, 오른쪽 아래0, 왼쪽 아래70 */
+
+.box4 {
+    /* border-radius: 20px 50px 0 70px; */
+    border-start-start-radius: 20px;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 0;
+    border-end-start-radius: 70px;
+}
+
+/* .box5 아래쪽 오른쪽 50px */
+
+.box5{
+    boder-end-end-radius: 50px
+}
+
+/* .box6 아래쪽 왼쪽 30px */
+
+.box6 {
+    border-end-start-radius: 30px;
+}
+/* .box7모서리 둥글기의 가로 세로 크기를 다르게 줄 때 가로/세로 */
+.box7 {
+    border-radius: 10px/70px;
+}

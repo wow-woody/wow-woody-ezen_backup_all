@@ -1,0 +1,285 @@
+/* 포지션은 각 객체를 겹치고 싶을 때  */
+
+/* 플렉스는 1차원 (가로 또는 세로) */
+/* 축 방향 중심 정렬 */
+/* 버튼, 메뉴, 리스트, 네비게이션 바 */
+/* 객체를 옆으로 붙이거나 나열하고 싶을 때 */
+
+
+/* 그리드는 2차원 (가로 + 세로) */
+/* 셀(행/열) 기반 정렬*/
+/* 전체 페이지, 썸네일 격자, 대시보드 */
+
+/* Flexbox: 요소들을 한 줄 또는 한 방향으로 정렬할 때 적합. 예: 수평 메뉴, 카드 나열 */
+
+/* Grid: 복잡한 행/열 구조가 필요한 경우. 예: 블로그 썸네일 + 제목 + 설명 + 버튼 구성 */
+
+/* 실제 프로젝트에서는 Flexbox로 세부 정렬을 하고 Grid로 전체 틀을 잡는 방식이 자주 사용됩니다 */
+
+html {
+    font-size: 15px;
+}
+
+.inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: pink;
+    padding: 0 10px; /*패딩값은 10px ~ 24px 사이로 주면 좋음 */
+}
+
+
+/* PC 버전에서 숨기기 */
+.m-gnb,
+.close-btn,
+.ham-btn {
+    display: none;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-menu {
+    background-color: green;
+    display: flex;
+    gap: 100px;
+}
+
+
+.main-menu > li > a {
+    display: block;
+    padding: 0 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.sub {
+     display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+           
+
+}
+
+
+.gnb {
+    background-color: skyblue;
+    display: flex;
+    gap: 10px;
+}
+
+
+main {}
+section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+.news-list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.news-list > div {
+    border: 1px solid black;
+    background: #eee;
+    width: calc(50% - 30px);
+    aspect-ratio: 2/1;
+
+}
+
+.product-list{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: grid; /* display: grid란 그리드 레이아웃을 사용하겠다는 의미 */
+    /*grid-template-columns: repeat(3, 1fr); /*한줄을 3등분(3개) 명령어 */
+    /* grid-template-columns: repeat(4,1fr);
+    padding: 10px; */
+    grid-template-columns: 2fr 1fr 1fr; /* 1:2:1 비율로 나누는 명령어 */
+    grid-template-areas: 
+        "box1 box2 box3"
+        "box1 box4 box5"; /* grid-template-areas: 그리드 영역을 지정하는 명령어 */
+    gap: 10px;
+}
+
+.product-list > div {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.product-list > .box1 {
+    /*grid-row: 1/3;  /* 1행부터 3행까지 차지 하겠다는 명령어 - 맨 윗줄에 1행 가운데 2행 맨 아래 3행 */
+    /*grid-column: 1/3; /* 1열부터 3열까지 차지 하겠다는 명령어 - 맨 왼쪽에 1열 가운데 2열 맨 오른쪽 3열 */
+    grid-area: box1; /* grid-area: 그리드 영역을 지정하는 명령어 */
+}
+
+.sns-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.sns-list > div {
+    border: 1px solid black;
+    height: 200px;
+}
+
+.sns-list > .box1 {
+    background: green;
+    width: 25%;
+    /*aspect-ratio: 2/1;   /*반응형 줄때 편함*/
+}
+
+.sns-list > .box2 {
+    background: orange;
+    /* width: calc(50% - 60px); */
+    width: 50%;
+    aspect-ratio: 4/1;   /*반응형 줄때 편함*/
+}
+
+.sns-list > .box3 {
+    background: aqua;
+    width: 25%;
+    /*aspect-ratio: 2/1;   /*반응형 줄때 편함*/
+}
+
+
+
+
+footer {
+    padding: 30px 0;
+    background: #333;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+
+
+    .gnb {
+        display: none;
+    }
+    nav {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        left: 0;
+        background: #ddd;
+        height: 100vh;
+        max-width: 600px;  /* 최대 값 */
+        max-width: 300px;  /* 최소값 */
+        width: 70%;   /* 기본 값 */
+        display: none;
+    }
+
+  .main-menu {
+    display: block;
+    
+  }
+    
+
+    /* 보여 주기 */
+    .m-gnb,
+    .close-btn,
+    .ham-btn {
+        display: none;
+    }
+
+
+    .sub {
+        display: block;
+        position: static;  /* 포지션 원래 위치로 하는 명령어 */
+    }
+
+    /* .main-menu {
+        gap: 50px;
+    }
+
+    .news-list > div,
+    .product-list > div {
+        width: 100%;
+    }
+
+    .news-list,
+    .product-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sns-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sns-list > div {
+        width: 100%;
+        aspect-ratio: auto;
+        height: 200px;
+    } */
+}
+
+
+
+@media  screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "box1 box1"
+            "box2 box3"
+            "box4 box5"; /* grid-template-areas: 그리드 영역을 지정하는 명령어 */
+
+
+    }
+
+    .product-list > .box1 {
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        aspect-ratio: 3/1; /*가로가 3 세로가 1 비율*/ 
+    }
+
+    .product-list > .box2 {
+        grid-area:box2;
+    }
+    .sns-list {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .sns-list > div {
+        width: calc(50% - 12px);
+    }
+
+    .sns-list > .box2 {
+        width: 100%;
+        order: 1;
+    }
+
+}
+
+
+
+@madia screen and (max-width: 360px) {
+    html {
+        font-size: 10px;
+    }
+
+}}

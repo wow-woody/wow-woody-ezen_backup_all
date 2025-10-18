@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //메뉴 저장할 배열
+        let menus = ["도시락", "차돌된장", "순대국", "동태탕", "카레", "초밥"];
+        // let menus = ["도시락", "차동된당", "순대국", "동태탕"]; // 배열이 6보다 적으면  undefined 값이 나옴
+        let count = menus.length;
+        //임의의 숫자를 발생시키기 0~1 ==> 0~6
+        // let rnd = Math.random()*6; // 배열이 6보다 적으면  undefined 값이 나옴
+        let rnd = Math.random()*count;
+        console.log(rnd);
+
+        // 소수점 버리기
+        let num = Math.floor(rnd);
+        console.log(num);
+
+        document.write(`오늘의 추천메뉴는 ${menus[num]} 입니다.`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

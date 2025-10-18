@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background-color: antiquewhite;
+            width: 800px;
+            padding: 10px;
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-columns: repeat(3, minmax(100px, auto));
+            grid-template-rows: repeat(3, minmax(100px, auto));
+
+        }
+
+        .wrap > div {
+            background-color: pink;
+            border: 1px solid black;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h1>grid</h1>
+    <p>minmax 너비와 높이를 최대 최소 범위를 정할 때</p>
+
+    <div class="wrap">
+        <div class="grid1">1</div>
+        <div class="grid2">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium nulla blanditiis fuga officiis facilis tenetur odio repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium nulla blanditiis fuga officiis facilis tenetur odio repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium nulla blanditiis fuga officiis facilis tenetur odio repudiandae.</div>
+        <div class="grid3">3</div>
+        <div class="grid4">4</div>
+        <div class="grid5">5</div>
+        <div class="grid6">6</div>
+        <div class="grid7">7</div>
+        <div class="grid8">8</div>
+        <div class="grid9">9</div>
+    </div>
+</body>
+</html>

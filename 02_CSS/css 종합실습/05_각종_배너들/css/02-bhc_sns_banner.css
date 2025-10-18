@@ -1,0 +1,32 @@
+.insta-wrap {
+    display: flex;
+    width: 1200px;
+    height: 700px;
+    border: 1px solid red;
+    margin: 0 auto;
+  
+}
+.insta-wrap div {
+    flex: 1;
+}
+
+.insta-wrap .insta-left {
+    background-color: pink;
+    overflow: hidden;
+}
+
+.insta-wrap .insta-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.insta-wrap .insta-list > div {
+    
+    border: 1px solid #b1b1b1;
+    border-radius: 20px;
+    flex: 0 0 45%;
+    /* width 265 - hight 507 */
+    aspect-ratio: 16/22;
+    
+}

@@ -1,0 +1,134 @@
+html {
+    font-size: 16px;
+}
+
+header{
+    padding: 10px 0;
+}
+
+
+.inner {
+    max-width: 1400px;
+    background-color: pink;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+
+/* pc 버전 숨기기 */
+.ham-btn,
+.close-btn,
+.m-gnb {
+    display: none;
+}
+
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+}
+
+.main-menu > li {
+    background-color: #ccc;
+    position: relative;
+
+}
+
+.main-menu > li > a{
+  display: block;
+  padding: 10px 30px;
+}
+
+.gnb{
+    display: flex;
+    gap:10px;  
+}
+
+.depth1 {
+    position: absolute;
+    background-color: skyblue;
+    width: 100%;
+    text-align: center;
+    line-height: 2;
+    display: none;
+
+}
+
+@media screen and (max-width:768px) {
+
+    /* 숨기기 */
+    .gnb {
+        display: none;
+    }
+
+    /* 보이기 */
+    .ham-btn,
+    .close-btn,
+    .m-gnb {
+        display: block;
+    }
+
+
+    header .inner {
+        padding: 0;
+    }
+
+    .nav-wrap {
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background: #333;
+        top: 0;
+        left:-120%;
+    }
+
+    .m-gnb {
+        display: flex;
+        /* color: #fff; */
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .m-gnb > li {
+        background: #eee;
+    }
+
+
+    .m-gnb > li > a {
+        border-radius: 20px;
+        padding: 4px 20px;
+        display: block;
+    }   
+
+    .main-menu {
+        display: block;
+    }
+
+    .depth1 {
+        position: static;
+    }
+
+    .main-menu > li {
+        border: 1px solid #999;
+    }   
+
+
+    .close-btn {
+        position: absolute;
+        width: 32px;
+        top:10px;
+        right:-45px;
+    }
+
+
+    .ham-btn {
+        width: 32px;
+    }
+    /* 100% 보이기 */
+    
+}

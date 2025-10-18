@@ -1,0 +1,153 @@
+/* 1280px */
+@media screen and (max-width:1280px) {
+    /* 1. 제거하기 */
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        /* background: rgba(0,0,0,0.7); */
+        top: 0;
+        left: 0;
+    }
+
+    .main-menu {
+        display:none;
+        width: 70%;
+        height: 100%;
+        max-width: 700px;
+        background: #fff;
+        text-indent: 3rem;
+    }
+
+    .main-menu > li::after{
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .main-menu > li > a {
+        border-bottom: 1px solid #ddd;
+        background: url(../images/icon-down.svg) no-repeat 90% center;
+        
+    }
+
+    .main-menu >.active > a {
+        background-image: url(../images/icon-up.svg);
+}
+
+    .depth1 {
+        display: none;
+        position: static;
+        text-indent: 50px;
+        line-height: 2;
+    }
+
+    /* 2, 보여주기 */
+
+
+    /* 3. 100% 만들기 */
+    .news-list {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .news-list > li {
+        width: calc(50% - 1rem);
+        padding: 10rem 4rem;
+    }
+
+    .scd-list > li {
+        width: calc(100% /3);
+        aspect-ratio: 1/1;
+        margin: 0;
+
+    }
+    .scd-list > li > a {
+        width: 100%;
+        height: 100%;
+        padding: 6rem;
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (max-width:1128px) {
+    html {
+        font-size: 8px;
+    }
+    
+    .section-title {
+        padding: 5rem 0 3rem;
+    }
+
+    .product {
+        height: auto;
+    }
+
+    .product-arrow-list {
+        display: none;
+    }
+
+    .promotion-movie {
+        width: 95%;
+    }
+    .scd-wrap::before {
+        display: none;
+    }
+
+    .scd-list > li > a {
+        text-align: center;
+    }
+
+    footer .inner {
+        padding: 4rem 5rem;
+    }
+}
+
+   
+@media screen and (max-width:920px) {
+    .scd-list > li > a .scd-title {
+        font-size: 2.8rem;
+        margin: 3rem 0;
+    }
+
+    .scd-list > li > a .scd-title span {
+        display: none;
+    }
+    
+
+}
+
+/* 768px */
+@media screen and (max-width:768px) {
+    /* 제거하기 */
+    .aside-menu,
+    .arrow-btn,
+    .scroll-wrap {
+        display: block;
+    }
+
+    .main-slider-wrap {
+        margin-top: 50px;
+    }
+    .product-list  {
+        gap: 2rem;
+    }
+
+    .product-list > li,
+    .product-list > .active{
+        flex: 0 0 50%;
+    }
+
+    footer .inner {
+        display: block;
+        text-align: center;
+        padding: 4rem 16px;
+    }
+ 
+    .footer-right {
+        margin-top: 20px;
+        align-items: center;
+    }
+    .footer-right > .footer-menu {
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,13 @@
+.spacing1{
+    letter-spacing: -0.05em;
+}
+
+
+
+/* word-spacing 단어 사아의 간격 */
+
+
+.spacing2{
+    word-spacing: 20px;
+
+}

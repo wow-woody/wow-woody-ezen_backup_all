@@ -1,0 +1,94 @@
+img {
+    width: 300px;
+}
+
+.filter2 {
+    이미지 블러 처리
+    filter: blur(10px);
+}
+
+.filter3 {
+    /* 이미지 밝게 또는 어둡게 */
+    /* 어둡 0% -> 100% 밝음 */
+    filter: brightness(40%);
+}
+
+.filter4 {
+    /* 대비값 조절 - 선명도 낮게 회색되면서 흐려짐*/
+    /* 선명값 100% */
+    filter: contrast(10%);
+    
+ }
+
+
+.filter5 {
+    /* 흑백 채도 조절 */
+    /* 컬러 0% -> 100% 흑백 */
+    filter: grayscale(100%);
+ }
+
+
+.filter6 {
+    /* 색상 반전 */
+
+    filter: invert(100%);
+
+ }
+
+
+
+
+.filter7 { 
+    /* 채도 조절 */
+    /* 0% 채도 없음 - 100% 채도 있음 */
+    filter:saturate(100)
+
+
+}
+
+
+.filter8 { 
+    /* 세피아톤 */
+    /* 0%~100%  기본 */
+    filter: sepia(100%);
+}
+
+.filter9 {
+    filter: sepia(50%) blur(3px);
+}
+
+.filter10 { }
+
+
+
+
+h1 {
+    font-size: 200px;
+    position: fixed;
+    color: deepskyblue;
+    filter: invert(50%);
+    opacity: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

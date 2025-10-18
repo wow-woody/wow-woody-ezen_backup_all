@@ -1,0 +1,55 @@
+li {
+    list-style: none;
+}
+
+.wrap > div {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    margin: 10px;
+    transition: 1s;
+
+}
+
+.wrap > div:hover {
+    transform: rotate(360deg);
+}
+
+.wrap > .box2 {
+    transform-origin: right center;
+}
+
+.wrap > .box3{
+    transform-origin: 100% 100%;
+}
+
+
+.list {
+    display: flex;
+    gap:30px;
+}
+
+.list > li {
+     border: 1px solid red;
+     padding: 20px;
+     background: wheat;
+     transition: 0.5s;
+}
+
+.list > li:hover {
+    transform: scale(1.8);
+}
+
+
+.list > li:first-child{
+    transform-origin: 100% 50%;
+}
+
+.list > li:last-child{
+    transform-origin: -20px center;
+}
+
+
+.list > li:last-child:hover {
+    transform-origin: 0% center;
+}

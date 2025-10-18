@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+
+    <style>
+        h2 {
+            font-size: 130px;
+        }
+
+        .text1 {
+            text-shadow: 3px 5px 10px red;
+        }
+
+        .text2{
+            text-shadow: -10px -5px 5px blue;
+
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #ddd;
+            
+            /* 그림자 기본은 외부 그림자 */
+            /* 내부 그림자는 inset */
+            box-shadow: 3px 5px 5px 10px green inset;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>그림자</h1>
+    <h2 class="text1">text-shadow</h2>
+    <h2 class="text2">box-shadow</h2>
+    <div class="box"></div>
+
+
+
+
+</body>
+</html>

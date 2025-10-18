@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fedex 수화물</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>수화물 정보</h1>
+    <!-- form>table>tr*7>th+td -->
+
+    <form action="">
+        <table>
+            <tr>
+                <th><label for="pCount">패키지수</label></th>
+                <td><input id="pCount" type="number" min="1" value="1"></td>
+            </tr>
+            <tr>
+                <th><label for="">패키지가 일치합니다</label></th>
+                <td>
+                    <label for="">예<input type="radio" name="packdge"></label>
+                    <label for="">아니오<input type="radio" name="packdge"></label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="weight">패키지별 무게</label></th>
+                <td>
+                    <input type="text" id="weight" title="무게 입력">
+                    <select title="패키지별 무게 단위를 선택하세요" id="">
+                        <option value="kg">킬로그램</option>
+                        <option value="g">그램</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <label for="number_sand">
+                        <input type="checkbox" name="" id="number_sand">고객번호를 사용하여 전송
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="pickup"></label>픽업/방문접수</th>
+                <td>
+                    <select title="pickup">
+                        <option value="방문">방문</option>
+                        <option value="픽업" selected>픽업</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>발송 날짜</th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="submit" value="빠른 견적 받기">
+                    <input type="submit" value="상세 견적 받기">
+                    <input type="button" value="상세 견적 받기">
+                </th>
+                <!-- <td></td> -->
+            </tr>
+        </table>
+    </form>
+
+    <br><br><br>
+
+    <form >
+        <table>
+            <tr>
+                <th><label for="pack_count">패키지수</label></th>
+                <td><input id="pack_count" type="number" min="1" value="1"></td>
+            </tr>
+            <tr>
+                <th><label for="">패키지가 일치합니다</label></th>
+                <td>
+                    <label>예<input type="radio" name="packdge"></label>
+                    <label>아니오<input type="radio" name="packdge"></label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="weight">패키지별 무게</label></th>
+                <td>
+                    <input type="text" id="weight" title="무게입력">
+                    <select title="무게를 입력해주세요">
+                        <option value="kg">킬로그램(kg)</option>
+                        <option value="g">그램(g)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <label for="a_number">
+                        <input type="checkbox" name="" id="a_number">
+                        고객 번호를 사용하여 전송
+                    </label>
+            </td>
+            </tr>
+            <tr>
+                <th><label for="pickup"></label>픽업/방문 접수</th>
+                <td>
+                    <select name="" id="pickup">
+                        <option value="픽업">픽업</option>
+                        <option value="방문" selected>방문</option>
+                    </select>
+                    
+                </td>
+            </tr>
+            <tr>
+                <th><label for="date">발송 날짜</label></th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="submit" value="빠른 견적 받기">
+                    <input type="submit" value="상세 견적 받기">
+                    <input type="button" value="임시저장 ">
+                </th>
+                <!-- <td  colspan="2">
+                    <input type="submit" value="빠른 견적 받기">
+                    <input type="submit" value="상세 견적 받기">
+                    <input type="button" value="임시저장 ">
+                </td> -->
+                <!-- <td></td> -->
+            </tr>
+        </table>
+    </form>
+
+    <form action="">
+        <table>
+            <tr>
+                <th><label for="pack_count">패키지 수</label></th>
+                <td><input id="pack_count" type="number" min="1" value="1"></td>
+            </tr>
+            <tr>
+                <th><label for="">패키지가 일치합니다.</label></th>
+                <td><input type="radio" name="" id=""></td>
+                <td><input type="radio" name="" id=""></td>
+            </tr>
+            <tr>
+                <th>패키지별 무게</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>픽업 및 방문</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>발송날자</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2"></th>
+                <!-- <td></td> -->
+            </tr>
+        </table>
+
+    </form>
+
+
+</body>
+</html>
