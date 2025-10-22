@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .dropdown{
+            display: none;
+            border: 1px solid #ccc;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>검색어 자동완성</h1>
+    <div class="search-box">
+        <input type="text" id="search" placeholder="검색어를 입력하세요">
+        <div class="dropdown"></div>
+
+    </div>
+
+    <script>
+        // DOM 요소 선택
+        let memoInput = document.querySelector('#search');
+        let dropdown = document.querySelector('.dropdown');
+
+        // input에 커서가 들어가면 dropdown에 그동안 입력한 검색어를 보여주기
+        memoInput.addEventListener("click", showDropdown);
+        // input에 데이터를 입력하면 입력된 데이터를 localStorage에 저장하기
+        memoInput.addEventListener("change", saveSearch);
+
+
+
+        //입력한 데이터를 저장할 배열
+        let history = [];
+
+        // searchHistory키로 데이터 저장하기
+        history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+
+        //문서를 클릭하면 .search-box가 사라지도록
+        document.addEventListener("click", (e) =>{
+            if (!e.target.closest(".search-box")) {
+                dropdown.style.display = "none";
+            };
+        });
+
+
+
+        // searchHistory라는 key값으로 배열형태로 저장하기
+        function showDropdown() {
+            console.log("커서가 클릭됨");
+            dropdown.innerHTML = ""; //기존 내용 초기화
+            history.forEach(item => {
+                let pTag = document.createElement("p");
+                pTag.textContent = item; //검색어 텍스트 추가 명령어
+                dropdown.append(pTag); //dropdown에 추가하는 명령어
+            });
+            dropdown.style.display = "block";
+        }
+
+        function saveSearch() {
+            let value = memoInput.value.trim();
+            //중복 제거
+            history = history.filter(item => item !== value)
+            history.unshift(value);
+            localStorage.setItem("searchHistory", JSON.stringify(history));
+
+            // localStorage.setItem("memo", value);
+
+            // 입력된 value값을 빈칸으로
+            memoInput.value = "";
+        }
+    </script>
+</body>
+
+</html>

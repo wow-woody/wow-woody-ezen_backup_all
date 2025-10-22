@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch HTML in Chrome",
+      "file": "${workspaceFolder}/132-localSrorage_로컬에_저장.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch 133-localStorage-검색어_자동완성.html in Chrome",
+      "file": "${workspaceFolder}/133-localStorage-검색어_자동완성.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch 134-todo_list.html in Chrome",
+      "file": "${workspaceFolder}/134-todo_list.html",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

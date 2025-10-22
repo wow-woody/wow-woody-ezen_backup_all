@@ -1,0 +1,11 @@
+{
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "javascript.suggest.enabled": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}
