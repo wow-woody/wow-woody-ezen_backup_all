@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //변수, 전역변수, 지역변수
+        //전역변수 - 모든 영역에서 사용되는 변수
+        //지역변수 - 특정 함수에서, for에서 선언한 변수로 그 안에서만 사용할 수 있다 
+        //두수를 입력 받아서 합계를 구하는 함수
+        function sum(a, b) {
+            //합계를 저장할 변수 선언하기
+            let total = a + b;
+            return total;
+        }
+        
+        //전역변수
+        let total = sum(10, 5);
+        document.write(total);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //배열은 하나의 이름에 여러개의 데이터를 저장하는 공간
+        let date = [10, 5, "홍길동", "금요일", "우산"]
+        
+
+        //문자열 선언하기
+        let str="es6!";
+
+
+        //객체  만글기
+        let TV = {
+            brand:"삼성",
+            inch:80,
+            flat:"flat",
+            on:function(){
+                alert("TVrk 켜짐");
+            },
+
+            off: function () {
+                alert("TV가 꺼짐");
+            }
+        }
+
+
+        //for
+        for(let i=0; i<date.length; i++){
+            document.write(date[i]+"<br>");
+        }
+        document.write("<hr>");
+
+
+        //for~ in
+        //배열, 문자열, 객체
+        //for(순서를 체크할 변수 in 배열)
+        for(let i in date){
+            document.write(date[i]+"<br>")
+        }
+        document.write("<hr>");
+
+
+        //fot~of
+        //배열, 문자열에서 사용,  객체는 사용불가
+        // for(배열의 데이터를 저장할 변수 of 배열명)
+        // for(let item of data){
+        //     document.write(item + "<br>");
+        // }
+
+
+        //for~ of 문자열 출력하기
+        for(let st of str){
+            document.write(st+"<br>");
+        }
+        document.write("<hr>");
+
+
+        //for~i 문자열 출력하기
+        for(let i in  str){
+            document.write(str[i]+"<br>")
+        }
+        document.write("<hr>");
+
+
+        // for~in으로 TV 객체 출력하기
+        for(let i in TV){
+            document.write(`${i} : `);
+            document.write(`${TV[i]}<br>`);
+        }
+
+    </script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let numbers = [1, 2, 3, 4, 5, 6];
+
+        // let ever = numbers.filter((배열 데이터를 저장할 변수, 순서, 배열) => 조건문)
+
+        //  데이터의 값이 2의 배수인 데이터를 새로운 배열로 출력 
+        let even = numbers.filter((num)=> num % 2 === 0);
+        document.write(even + "<br>");
+
+        // 데이터의 값이 4보다 큰 값을 새로운 배열로 출력
+        let count =  numbers.filter((num) => num > 4);
+        document.write(count + "<br>");
+
+
+
+        //--------------------------------------------------------------------------
+        let fruits = ["apple", "banana", "cherry", "peach", "strawberry"];
+
+        // fruits 글자의 길이(글자수)가 6이상인 것만 찾아서 새로운 배열로 출력
+        let result = fruits.filter(f => f.length >= 6);
+        document.write(result + "<br>");
+
+
+
+       //--------------------------------------------------------------------------
+        const users = [
+            {name:"kim", age:40, 성별:"남자"},
+            {name:"lee", age:10, 성별:"여자"},
+            {name:"hong", age:20, 성별:"남자"},
+            {name:"흰둥이", age:5, 성별:"남자"},
+        ]
+        
+        // 나이가 30살 이하만 추출하려 새로운 배열로 출력
+        let young = users.filter(u =>u.age <= 30);
+        document.write(young + "<br>");
+        // API json 파일할 때 함
+        // JSON.stringify object를 문자열로 변환해서 출력할 때 사용
+        document.write(JSON.stringify(young) + "<br>");
+        console.log(young);
+
+        // 변수명 users에서 성별이 남자인 데이터만 새로운 배열로 추출해서 출력
+        let man = users.filter(m => m.성별 === "남자");
+        console.log(man);
+        man.forEach(m => {
+             document.write(`${m.name} <br>`)
+        })
+
+
+  
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1>필터 filer</h1>
+    <p>배열 요소에서 조건에 맞는 요소를 새로운 배열로 만들기</p>
+</body>
+</html>

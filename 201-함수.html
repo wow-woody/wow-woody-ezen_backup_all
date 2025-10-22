@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        
+        // 선언적 함수 표현식
+        function week () {
+            document.write("오늘은 수요일" +" <hr>")
+        }
+        week();
+
+         // 선언적 함수 표현식 - 2
+        function week2 (day) {
+            document.write("내일은 " + day +" <hr>")
+        }
+        week2("목요일");
+
+
+
+        // 함수 표현식
+        let hi = function () {
+            document.write("하이!" +" <hr>")
+        }
+        hi();
+
+        // 함수 표현식 - 2
+        let hi_hi = function (num) {
+            document.write(`하이! ${num} <hr>`)
+        }
+        hi_hi(3);
+
+
+
+        // 화살표 함수 표현식
+        let hi2 = () => {
+            document.write("비가오는 수요일!" +" <hr>")
+        }
+        hi2();
+
+        // 화살표 함수 표현식 -2 (매개 변수가 1개일 때는 괄호를 생략할 수 있음 하지만 난 쓴다.)
+        let hi2_1 = (hi) => {
+            document.write(` 안녕 ${hi}<hr>`)
+        }
+        hi2_1(3333);
+
+        
+
+
+        //this
+        // 일반 함수에서의 this는 window 자체를 가르킨다.
+        function showThis() {
+            console.log(this);
+        }
+        showThis()
+
+        let show2 = function () {
+            console.log(this);
+        }
+        show2();
+
+        const person = {
+            name:"홍길동",
+            age:20,
+            greet: function () {
+                console.log(`안녕 ${this.name}`)
+            }
+        }
+
+        person.greet();
+
+        const person2 = {
+            name:"홍길동",
+            age:20,
+            greet: () => {
+                console.log(`안녕22 ${this.name}`)
+                // 자기 자신을 찾지 못함(객채).
+                // 화살표 함수의 this 상위를 찾늗나? 앱솔루트랑 렐러티브 정도?
+
+            }
+        }
+
+        person2.greet();
+
+    </script>
+</head>
+<body>
+    <h1>함수</h1>
+    <p>자주 사용되는 명령들을 한곳에 묶어두는 명령어</p>
+    <p>1. 선언적 함수(명명함수) : 이전 ***호출하지 않으면 표현, 구현, 구동되지 않음</p>
+    <p>2. 함수 표현식(익명함수)</p>
+    <p>3. 화살표 함수 es6부터 도입, 합수를 간결하게 사용하기 위해 도입
+          this는 사용불가
+    </p>
+    <p>호이스팅(Hoisting) : 선언 전에 호출 가능, 변수나 함수 선인이 마치 코드의 최상단으로 끌어올려진 것 처럼 동작하는 현상_오류뜸?</p>
+
+    <pre>
+
+        ✅
+        1. 선언적 함수 표현식
+        function 함수이름(매개변수) {
+            실행할 명령어 및 값;
+        }
+
+        ✅✅
+        2. 함수 표현식
+        let 함수이름 = function (매개변수) {
+            실행할 명령어 및 값  ;  
+        }
+
+        ✅✅✅
+        3. 화살표 함수 표현식
+        let 함수이름 = (매개변수) => {
+            실행할 명령어 및 값;
+        }
+        let 함수이름 = (매개변수, 매개변수2) => {
+            실행할 명령어 및 값;
+        }
+
+        **매개변수: 함수를 정의할 때 함수 내부에서 사용될 값의 이름을 붙이는 변수
+                    - 함수 안 또는 함수 매서드에 넣은 변수
+
+
+    </pre>
+</body>
+</html>

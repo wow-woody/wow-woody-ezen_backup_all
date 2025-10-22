@@ -1,0 +1,30 @@
+.main-slider-wrap {
+    position: relative;
+}
+
+.main-slider-wrap .text-box {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.main-slider-wrap .text-box p {
+ font-size: 1.3rem;
+}
+
+.main-slider-wrap video,
+.main-slider-wrap img,{
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active{
+    width: 30px;
+}

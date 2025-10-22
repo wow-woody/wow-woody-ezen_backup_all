@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. 리퍼널 방식으로 이용한 객체 생성하기
+        let TV =  {
+            brand:"삼성",
+            inch:80,
+            flat:"flat",
+            style:"벽걸이",
+            
+            on:function(){
+                alert("TV on");
+            },
+
+            off:function(){
+                alert("TV off");
+            }
+        }
+        console.log(TV.brand);
+        TV.on;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

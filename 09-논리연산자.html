@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num1 = 10, num2 = 5, num3 = 3;
+        let text = true;
+
+        // ! 부정 반대
+        console.log(text); //true
+        console.log(!text); //false
+
+        // 논리곱 &&(and)
+        // 2개 이상 명제 모든 조건이 참일 때만 참
+        // 조건 중 단 하나라도 거짓이면 거짓
+
+        // num1 < num2 && num1 < num3
+        console.log(num1 < num2 && num1 < num3); //10<5 && 10<3 //false
+
+        // num1 < num2 && num1 > num3
+        console.log(num1 < num2 && num1 > num3); //10<5 && 10>3//false
+
+        // num1 > num2 && num1 < num3
+        console.log(num1 > num2 && num1 < num3);//false
+
+        // num1 > num2 && num1 > num3
+        console.log(num1 > num2 && num1 > num3);//true
+
+
+
+        // 논리합 or
+        // 여러 조건 중 한개만 만족하면 참
+        // 모두가 거짓일때만 거짓
+        
+        // num1<num2 || num1<num3 10<5 || 10<3 f || f fales
+        console.log(num1 < num2 || num1<num3); //fales
+
+        // num1<num2 || num1>num3 10<5 || 10>3 f || t true
+        console.log(num1<num2 || num1>num3); //true
+
+        // num1>num2 || num1<num3 10>5 || 10<3 t || f true
+        console.log(num1<num2 || num1>num3); //true
+
+        // num1>num2 || num1>num3 10>5 || 10>3 t || t true
+        console.log(num1>num2 || num1>num3); //true
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <h1>논리연산자</h1>
+    <p>두개 이상의 논리식ㄴ을 조합하여 하나의 결과(참 또는 거짓)을 결정하는 연산자</p>
+    <p>참(True)과 거짓(False) 같은 논리값을 다루는 연산자이며, 크게 논리곱(AND, &&), 논리합(OR, ||), 논리 부정(NOT, !) 세 가지가 있음</p>
+
+    <h2>논리곱 and(&&)</h2>
+    <p>and 모든 조건이 참일 때만 참</p>
+    <p>2개 이상의 명제 모두가 참일 때만 참(True)</p>
+
+    <h2>논이합 or</h2>
+    <p>2개 이상 명제 중 적어도 1개 이상이 참이면 전체 명제도 참이 되는 논리 연산</p>
+
+</body>
+
+</html>

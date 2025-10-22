@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        if(true){
+             // var로 선언한 변수는 전역 변수처럼 사양된다(블록 밖에서 살아남음)
+            var a ="var로 선언한 변수는 전역 변수처럼 사양된다(블록 밖에서 살아남음)";
+
+            // let은 지역번수처럼 사용된다
+            let b="let은 지역번수처럼 사용된다";
+            
+            // const 는 지역변수처럼 사용된다.
+            const c ="const 는 지역변수처럼 사용된다";  
+        }
+
+        document.write(a);
+        document.write(b);
+        document.write(c);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
