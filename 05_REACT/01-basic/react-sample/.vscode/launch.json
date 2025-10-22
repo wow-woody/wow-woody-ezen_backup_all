@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "디버그: React App",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMaps": true,
+      "trace": true,
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeArgs": [
+        "--remote-debugging-port=9222"
+      ]
+    }
+  ]
+}

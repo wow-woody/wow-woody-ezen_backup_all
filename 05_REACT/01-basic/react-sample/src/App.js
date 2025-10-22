@@ -17,6 +17,9 @@ import ComCombine1 from './컴포넌트/ComCombine1.jsx';
 import ComCombine2Object from './컴포넌트/ComCombine2Object.jsx';
 import ComCombine3Object from './컴포넌트/ComCombine3Object.jsx';
 import ComCondition1Class from './ComCondition1Class.jsx';
+import ComCondition2Funct from './컴포넌트/ComCondition2Funct.jsx';
+import ComCondition3 from './컴포넌트/ComCondition3.jsx';
+import ComConditionLogin4 from './컴포넌트/ComConditionLogin4.jsx';
 
 const user = {
   name: '책상',
@@ -178,6 +181,22 @@ function App() {
       <h3>클래스 컴포넌트</h3>
       <ComCondition1Class />
 
+      <br />
+      <hr />
+      <br />
+
+      <ComCondition2Funct />
+
+
+      {/* 상품명, 품절 옵션을 출력해줄 컴포넌트 생성*/}
+
+      <ComCondition3 />
+
+      <br />
+      <hr />
+      <br />
+
+     <ComConditionLogin4 />
 
     </div>
   );
