@@ -20,7 +20,7 @@ const Event5Change = () => {
         <input type="checkbox" onChange={handleChange}/> {/*체크박스에 onChange={handleChange} 이벤트 함수 연결*/} 
         약관에 동의합니다.
       </label>
-      <p>{check ? "동의함" : "동의 안 함"}</p>
+  <p>{check ? "동의함" : "동의 안 함"}</p>
     </div>
   )
 }

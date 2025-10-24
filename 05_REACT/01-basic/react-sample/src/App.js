@@ -36,6 +36,17 @@ import Event4Change from './컴포넌트/Event4Change.jsx';
 import Event5Change from './컴포넌트/Event5Change.jsx';
 import Event6ChangeRadio from './컴포넌트/Event6ChangeRadio.jsx';
 import Event7ChangeSelect from './컴포넌트/Event7ChangeSelect.jsx';
+import Event8Submit from './컴포넌트/Event8Submit.jsx';
+import Event9Multi from './컴포넌트/Event9Multi.jsx';
+import Event10Member from './컴포넌트/Event10Member.jsx';
+import Event11ListAdd from './컴포넌트/Event11ListAdd.jsx';
+// import StateUp1 from './컴포넌트/StateUp1.jsx';
+// import StateUp0 from './컴포넌트/StateUp0.jsx';
+// import StateUp2 from './컴포넌트/StateUp2.jsx';
+import StateUp3 from './컴포넌트/StateUp3.jsx';
+import StateUp5 from './컴포넌트/StateUp5.jsx';
+// import StateUp4 from './컴포넌트/StateUp4.jsx';
+
 
 
 const user = {
@@ -251,11 +262,26 @@ function App() {
 
         <Event5Change />
 
-        <Event5Change /> {/* 확인 좀*/}
+        {/* <Event5Change /> 확인 좀 */}
 
         <Event6ChangeRadio />
 
         <Event7ChangeSelect />
+
+        <Event8Submit />
+
+        <Event9Multi />
+
+        <Event10Member />
+
+        <Event11ListAdd />
+        
+        {/* <StateUp1 /> 안됨 */}
+        {/* <StateUp0 /> 안됨 */}
+        {/* <StateUp2 /> 안됨 */}
+        <StateUp3 />
+        {/* <StateUp4 /> */}
+        <StateUp5 />
     </div>
   );
 };
