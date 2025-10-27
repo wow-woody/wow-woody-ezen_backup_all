@@ -1,0 +1,9 @@
+.display {
+    background: #fff;
+    line-height: 40px;
+    height: 60px;
+    border-radius: 10px;
+    font-size:24px;
+    padding: 10px;
+    text-align: right;
+};

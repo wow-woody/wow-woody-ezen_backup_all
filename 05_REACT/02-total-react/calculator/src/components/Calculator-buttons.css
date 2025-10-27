@@ -1,0 +1,14 @@
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 20px;
+
+    button {
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 5px;
+        background: #ddd;
+        border: none        
+    };
+}

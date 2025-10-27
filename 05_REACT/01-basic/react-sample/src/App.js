@@ -16,7 +16,7 @@ import ComFuctProps5Child from './컴포넌트/ComFuctProps5Child.jsx';
 import ComCombine1 from './컴포넌트/ComCombine1.jsx';
 import ComCombine2Object from './컴포넌트/ComCombine2Object.jsx';
 import ComCombine3Object from './컴포넌트/ComCombine3Object.jsx';
-import ComCondition1Class from './ComCondition1Class.jsx';
+import ComCondition1Class from './컴포넌트/ComCondition1Class.jsx';
 import ComCondition2Funct from './컴포넌트/ComCondition2Funct.jsx';
 import ComCondition3 from './컴포넌트/ComCondition3.jsx';
 import ComConditionLogin4 from './컴포넌트/ComConditionLogin4.jsx';
@@ -45,6 +45,13 @@ import Event11ListAdd from './컴포넌트/Event11ListAdd.jsx';
 // import StateUp2 from './컴포넌트/StateUp2.jsx';
 import StateUp3 from './컴포넌트/StateUp3.jsx';
 import StateUp5 from './컴포넌트/StateUp5.jsx';
+import StateUp7parent from './컴포넌트/StateUp7parent.jsx';
+import UseContext1 from './컴포넌트/UseContext1.jsx';
+import UseContext2 from './컴포넌트/UseContext2.jsx';
+import UseContext3 from './컴포넌트/UseContext3.jsx';
+import UseContext4 from './컴포넌트/UseContext4.jsx';
+import UseContext5 from './컴포넌트/UseContext5.jsx';
+import UseContext6 from './컴포넌트/UseContext6.jsx';
 // import StateUp4 from './컴포넌트/StateUp4.jsx';
 
 
@@ -233,7 +240,7 @@ function App() {
       <ComConditionLogin5 />
 
       <h2>이스트 렌더링</h2>
-      
+
       <List1 />
 
       <List2Object />
@@ -252,36 +259,72 @@ function App() {
       <p>키보드 이벤트 - onKeyDown, onKeyOff</p>
       <p>폼 이벤트 - onChange(입력값이 변경될 때), onInput(입력할 때마다), onSubmit(제출)</p>
 
-        <Event1 />
+      <Event1 />
 
-        <Event2 />
+      <Event2 />
 
-        <Event3 />
+      <Event3 />
 
-        <Event4Change />
+      <Event4Change />
 
-        <Event5Change />
+      <Event5Change />
 
-        {/* <Event5Change /> 확인 좀 */}
+      {/* <Event5Change /> 확인 좀 */}
 
-        <Event6ChangeRadio />
+      <Event6ChangeRadio />
 
-        <Event7ChangeSelect />
+      <Event7ChangeSelect />
 
-        <Event8Submit />
+      <Event8Submit />
 
-        <Event9Multi />
+      <Event9Multi />
 
-        <Event10Member />
+      <Event10Member />
 
-        <Event11ListAdd />
-        
-        {/* <StateUp1 /> 안됨 */}
-        {/* <StateUp0 /> 안됨 */}
-        {/* <StateUp2 /> 안됨 */}
-        <StateUp3 />
-        {/* <StateUp4 /> */}
-        <StateUp5 />
+      <Event11ListAdd />
+
+      {/* <StateUp1 /> 안됨 */}
+      {/* <StateUp0 /> 안됨 */}
+      {/* <StateUp2 /> 안됨 */}
+      <StateUp3 />
+      {/* <StateUp4 /> */}
+      <StateUp5 />
+      <StateUp7parent />
+
+      <h2>useContext</h2>
+      <p>컴포넌트 트리 전체에 전역 데이터를 사용하기 위한 방법</p>
+      <UseContext1 />
+      {/* 1. context 생성 */}
+      {/* 2. 제공자(provider)로 부모요소 감싸기 */}
+      {/* 3. 자식 또는 후손에서는 context 사용 */}
+
+      <UseContext2 />
+
+      <br />
+      <hr />
+      <br />
+
+      <UseContext3 />
+
+      <br />
+      <hr />
+      <br />
+
+      <p>컴포넌트 트리 전체에 전역 데이터를 사용하기 위한 방법</p>
+      <UseContext4 />
+
+      <br />
+      <hr />
+      <br />
+
+      <UseContext5 />
+
+      <br />
+      <hr />
+      <br />
+
+      <UseContext6 />
+
     </div>
   );
 };
