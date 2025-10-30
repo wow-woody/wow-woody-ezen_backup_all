@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
+}
+button{
+  cursor: pointer;
+}
+
+img,video{
+  max-width: 100%;
+
+}
+
+.content-inner{
+  max-width: 1400;
+  margin: 0 auto;
+  background-color: pink;  
+}
+
+/* header */
+/* footer */

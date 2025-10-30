@@ -1,0 +1,7 @@
+.inner {
+    background: pink;
+
+    .title {
+        font-size: 50px;
+    }
+}

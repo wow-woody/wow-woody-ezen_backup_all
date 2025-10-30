@@ -52,6 +52,17 @@ import UseContext3 from './컴포넌트/UseContext3.jsx';
 import UseContext4 from './컴포넌트/UseContext4.jsx';
 import UseContext5 from './컴포넌트/UseContext5.jsx';
 import UseContext6 from './컴포넌트/UseContext6.jsx';
+import Style1css from './컴포넌트/Style1css.jsx';
+import Style2Condition from './컴포넌트/Style2Condition.jsx';
+import Style3scss from './컴포넌트/Style3scss.jsx';
+import Style4scss from './컴포넌트/Style4scss.jsx';
+import Style5component from './컴포넌트/Style5component.jsx';
+import Style6component from './컴포넌트/Style6component.jsx';
+import UseContext7 from './컴포넌트/UseContext7.jsx';
+import UseContextNone from './컴포넌트/UseContextNone.jsx';
+import UseContext8VoteCounterNone from './컴포넌트/UseContext8VoteCounterNone.jsx';
+import UseContext9VoteCounter from './컴포넌트/UseContext9VoteCounter.jsx';
+
 // import StateUp4 from './컴포넌트/StateUp4.jsx';
 
 
@@ -324,6 +335,34 @@ function App() {
       <br />
 
       <UseContext6 />
+
+      <br />
+      <hr />
+      <br />
+
+
+
+      <Style1css />
+
+      <Style2Condition />
+
+      <Style3scss />
+
+      <Style4scss />
+
+      <Style5component />
+      <Style6component />
+      <br />
+      <hr />
+      <br />
+      <UseContext7 />
+      <br />
+      <hr />
+      <br />
+      <UseContextNone />
+
+      <UseContext8VoteCounterNone />
+      <UseContext9VoteCounter />
 
     </div>
   );

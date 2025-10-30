@@ -1,0 +1,37 @@
+// $변수명: 값;
+
+$메인컬러 : hotpink;
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+
+  .card-wrap {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+
+    h2 {
+        color: $메인컬러;
+    }
+    a {
+        color:#333;
+        text-decoration: none;
+        &:hover {
+            color: $메인컬러;
+            text-decoration: underline;
+            // 중첩 선택자
+            // 부모 선택자 &
+            // &: 는 자기 자신의 부모을 선택할 때 사용
+            // &:hover = .card-wrap a:hover
+        }
+    }
+  }
+}
+
+.card-wrap a {}
+.card-wrap a:hover {
+    color: $메인컬러;
+}

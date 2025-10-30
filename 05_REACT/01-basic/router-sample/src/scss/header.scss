@@ -1,0 +1,25 @@
+$메인컬러:green;
+$메인텍스트:#333;
+
+// flex mixin
+@mixin myFlex($sb:space-between,$gap:10px){
+    display:flex;
+    justify-content:$sb;
+    gap:$gap
+}
+
+header{
+    border-bottom: 1px solid $메인컬러;
+    .inner{
+        @include myFlex(center,40px);
+        h1{}
+
+        .main-menu{
+            @include myFlex()
+        }
+    }
+
+
+
+    
+}
