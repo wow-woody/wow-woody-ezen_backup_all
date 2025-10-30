@@ -50,7 +50,9 @@ const MainSwiper = () => {
     > 
         <SwiperSlide><img src="./images/slider1.jpg" alt="" /></SwiperSlide>
         <SwiperSlide><img src="./images/slider2.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="./images/slider3.jpg" alt="" /></SwiperSlide>       
+        <SwiperSlide><img src="./images/slider3.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="./images/slider4.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="./images/slider5.jpg" alt="" /></SwiperSlide>
     </Swiper>
     </>
   )

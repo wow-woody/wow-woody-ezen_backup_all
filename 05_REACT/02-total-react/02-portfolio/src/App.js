@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './pages/Layout';
@@ -34,8 +34,8 @@ function App() {
             <Route path='Email' element={<Email />} />
             <Route path='Phone' element={<Phone />} />
           </Route>
-          <Route path='login' element={<Login/>}/>
-          <Route path='join' element={<Member/>}/>
+          <Route path='login' element={<Login />} />
+          <Route path='join' element={<Member />} />
         </Route>
       </Routes >
     </>
