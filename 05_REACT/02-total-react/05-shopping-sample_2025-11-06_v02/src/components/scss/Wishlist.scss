@@ -1,0 +1,21 @@
+@use "../../App.scss" as g;
+
+
+
+.wish-list {
+    li {
+        border: 1px solid #ddd;
+        padding: 10px;
+        @include g.myFlex();
+        .ima-box {
+            padding:10px
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .wish-info {
+            @include g.myFlex();
+        }
+    }
+}

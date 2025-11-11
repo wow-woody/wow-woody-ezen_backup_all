@@ -1,0 +1,28 @@
+// 공통사항 변수
+.content-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+button.kakao {
+    background: #f7e111;
+}
+
+// 공통 스타일
+@mixin myFlex($jc: space-between, $ai: center, $fw: null, $gap: 20px) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+    gap: $gap;
+}
+
+.section-wrap{
+    @include myFlex();
+    .section-left{
+        width: 45%;
+    }
+    .section-right{
+        width: 55%;
+    }
+}

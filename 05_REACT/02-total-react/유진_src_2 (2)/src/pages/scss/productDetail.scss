@@ -1,0 +1,27 @@
+@use '../../App.scss' as g;
+.product-wrap {
+  @include g.myFlex();
+  .product-text {
+    .product-size {
+      ul {
+        @include g.myFlex($jc: flex-start);
+        li {
+          button {
+            padding: 0 20px;
+            &.active {
+              background: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .product-count {
+      .product-count-box {
+        button {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}

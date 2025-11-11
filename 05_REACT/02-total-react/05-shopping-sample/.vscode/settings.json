@@ -1,0 +1,19 @@
+{
+  {
+  "editor.fontFamily": "'Fira Code', '엘리스 디지털코딩체 ver.H 굵게', '엘리스 디지털코딩체 ver.H', 'D2Coding', 'Consolas', 'monospace'",
+  "editor.fontLigatures": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "javascript.suggest.enabled": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }, 
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#34628d",
+    // "#4389cf"
+    "editor.selectionHighlightBackground": "#90caf980"
+  }
+}

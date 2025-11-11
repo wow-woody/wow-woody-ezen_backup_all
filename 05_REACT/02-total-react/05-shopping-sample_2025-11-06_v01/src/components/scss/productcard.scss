@@ -1,0 +1,21 @@
+@use "../../App.scss" as g;
+.img-box{
+    border:1px solid #ccc;
+    aspect-ratio: 1/1;
+    padding:50px;
+    text-align: center;
+    img{
+        // aspect-ratio: 1/1;
+    }
+}
+.text-box{
+    >div{
+        @include g.myFlex();
+        margin-top: 10px;
+        strong{}
+        span{
+            // font-size:1.5rem;
+            color:red;
+        }
+    }
+}

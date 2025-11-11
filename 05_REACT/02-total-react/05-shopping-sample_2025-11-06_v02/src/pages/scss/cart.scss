@@ -1,0 +1,43 @@
+@use '../../App.scss' as g;
+
+.cart-wrap {
+  .cart-title {
+    @include g.myFlex();
+    border-bottom: 1px solid #ccc;
+    line-height: 3;
+    > div {
+      @include g.myFlex();
+      &.cart-left {
+        width: 60%;
+      }
+      &.cart-right {
+        width: 40%;
+      }
+    }
+  }
+
+  .cart-list {
+    > li {
+      @include g.myFlex();
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      > div {
+        @include g.myFlex();
+      }
+      .cart-left {
+        img {
+          width: 80px;
+          height: 80px;
+          object-fit: contain;
+        }
+        .cart-info {
+        }
+      }
+      .cart-right {
+        button {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}

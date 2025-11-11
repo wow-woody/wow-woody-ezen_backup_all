@@ -1,0 +1,5 @@
+@use "../../App.scss" as g;
+
+.user-info-wrap {
+    @include g.myFlex($jc:flex-start);
+}

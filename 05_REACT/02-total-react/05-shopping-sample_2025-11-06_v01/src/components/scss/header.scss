@@ -1,0 +1,79 @@
+@use "../../App.scss" as global;
+
+header {
+    border-bottom:1px solid #eee;
+    padding:10px 0;
+    .content-inner {
+        @include global.myFlex();
+
+        .header-left {
+            @include global.myFlex($gap: 50px);
+
+            .logo {
+                width: 100px;
+            }
+
+            .main-menu {
+                @include global.myFlex($gap: 100px);
+
+                li {
+                    a {
+                        background-color: pink;
+                        font-weight: bold
+                    }
+                }
+            }
+        }
+
+        .header-right {
+            @include global.myFlex();
+            ul{
+                @include global.myFlex();
+                li{
+                    a{
+                        img{
+                            max-width: 24px;
+                        }
+                        span{
+                            display: block;   
+                            font-size: 11px;                         
+                        }
+                    }
+                    &.cart{
+                        position: relative;
+                        span{
+                            position: absolute;
+                            left:17px;
+                            top:0;
+                            background:red;
+                            color:#fff;
+                            width:14px;
+                            height:14px;
+                            border-radius: 50%;
+                            font-size:12px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .search-wrap{
+                position: relative;
+                input{
+                    line-height: 30px;
+                    text-indent: 6px;
+                }
+                .search-icon{
+                    position: absolute;
+                    right:10px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    img{
+                        width: 24px;
+                    }
+                }
+            }
+        }
+
+    }
+}
